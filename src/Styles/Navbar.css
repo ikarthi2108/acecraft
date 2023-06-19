@@ -1,0 +1,156 @@
+.navbarfull {
+  background-color: black;
+  height: 120px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: -10px;
+}
+
+.titlename {
+  color: #ffffff;
+  letter-spacing: 10px;
+  padding: 15px 0;
+  font-weight: 400;
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
+  text-decoration: none;
+  margin-top: 20px;
+  text-align: center;
+}
+
+  
+  
+  .nav-link {
+    color: #9e9e9e;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  
+  .nav-link:hover {
+    color: white;
+    font-weight: bold;
+  }
+  
+  .setting {
+    font-weight: 900;
+  }
+  
+  .setting li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: #fff;
+    opacity: 0.5;
+    width: 200px;
+    height: 1600px;
+  }
+  
+  .setting li:hover ul {
+    display: block;
+  }
+  
+  .setting li ul li {
+    display: block;
+    color: rgb(49, 48, 48);
+    font-size: 23px;
+    font-weight: 400;
+    margin-left: -50px;
+    background-color: #000;
+  }
+  
+  .setting li ul li a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: #000;
+    text-decoration: none;
+    height: 1600px;
+    opacity: 1;
+  }
+  
+  .setting li ul li a img {
+    width: 20px;
+    margin-right: 10px;
+    opacity: 0.5;
+  }
+  
+  .setting li ul li a:hover {
+    background-color: #f2f2f2;
+    opacity: 1;
+  }
+  
+  .setting li ul li a:hover img {
+    opacity: 1;
+    background-color: #8596ff;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 991px) {
+    .titlename {
+      margin-left: 10px;
+    }
+    
+    .navbarfull {
+      height: auto;
+    }
+  
+    .navbar-collapse {
+      justify-content: flex-end;
+    }
+  
+    .navbar-nav {
+      margin-right: 10px;
+    }
+  
+    .setting {
+      margin-left: 10px;
+    }
+  
+    .nav-link {
+      margin-left: 10px;
+      margin-right: 0;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .navbarfull {
+      height: auto;
+      padding: 10px;
+    }
+  
+    .titlename {
+      margin-left: 10px;
+      font-size: 20px;
+    }
+  
+    .navbar-collapse {
+      justify-content: flex-end;
+    }
+  
+    .navbar-nav {
+      margin-right: 10px;
+    }
+  
+    .setting {
+      margin-left: 10px;
+    }
+  
+    .nav-link {
+      margin-left: 10px;
+      margin-right: 0;
+      font-size: 12px;
+    }
+  }
+  
