@@ -1,8 +1,9 @@
 import React from 'react';
-// import Setting from './Setting .png';
-// import Cart from './Cart .png';
+import Setting from './Setting .png';
+import Cart from './Cart .png';
 import { Link } from 'react-router-dom';
 import '../Styles/Navbar.css';
+import { Badge } from 'react-bootstrap';
 
 function Navbar() {
     return (
@@ -43,6 +44,22 @@ function Navbar() {
                             </Link>
                         </div>
                     </div>
+                </div>
+                <div>      <img className='settingImage mx-3' sx={{
+                    "& .settingImage:hover": {
+
+                    }
+                }} src={Setting} alt="" />     <Badge className='badge' sx={{
+                    "& .MuiBadge-badge": {
+                        color: "gray",
+                        backgroundColor: "#d0d5db"
+                    },
+                    "& .MuiBadge-badge:hover": {
+                        color: "white",
+                        backgroundColor: "black"
+                    }
+                }} badgeContent={0} showZero>
+                        <i class="mx-1 fs-5 fa-solid fa-cart-shopping text-white"></i></Badge>
                 </div>
                 {/* 
             <div className='d-flex float-right'>

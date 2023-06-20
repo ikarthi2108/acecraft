@@ -19,3 +19,7 @@
 .footer a:hover {
     color: white;
 }
+
+.footer img{
+    width: 38px;
+}

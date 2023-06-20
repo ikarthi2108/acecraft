@@ -3,6 +3,10 @@ import React from "react";
 import { Link } from 'react-router-dom';
 
 import '../Styles/Footer.css';
+import Fb from './Fb.png';
+import Insta from './Insta.png'
+import Linkedin from './Linkedin.png'
+
 
 
 export default function Footer() {
@@ -18,9 +22,9 @@ export default function Footer() {
                     <div className="row justify-content-center pb-4 mt-n5">
 
                         <div className="d-flex justify-content-center">
-                            <i className="fa-brands fa-facebook me-2" style={{ color: '#ffffff' }}></i>
-                            <i className="fa-brands fa-instagram me-2" style={{ color: '#ffffff' }}></i>
-                            <i className="fa-brands fa-linkedin-in me-2" style={{ color: '#ffffff' }}></i>
+                            <img src={Fb} alt="fb"/>
+                            <img src={Insta} alt="insta"/>
+                            <img src={Linkedin} alt="linkedin"/>
                         </div>
 
                     </div>
