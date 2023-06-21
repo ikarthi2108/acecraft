@@ -1,14 +1,14 @@
 import React from 'react';
-import Setting from './Setting .png';
-import Cart from './Cart .png';
+// import Setting from './Setting .png';
+// import Cart from './Cart .png';
 import { Link } from 'react-router-dom';
 import '../Styles/Navbar.css';
-import { Badge } from 'react-bootstrap';
+// import { Badge } from 'react-bootstrap';
 
 function Navbar() {
     return (
         <div className='navbarfull fixed-top'>
-            <Link className='titlename ' to='#'>
+            <Link className='titlename ' to='/'>
                 acecraft
             </Link>
             <nav className='navbar navbar-expand-lg'>
@@ -27,40 +27,25 @@ function Navbar() {
                     </button>
                     <div className='collapse navbar-collapse' id='navbarNavAltMarkup'>
                         <div className='navbar-nav'>
-                            <Link className='nav-link me-5' aria-current='page' to='#'>
+                            <Link className='nav-link me-5' aria-current='page' to='School'>
                                 SCHOOL
                             </Link>
-                            <Link className='nav-link me-5' to='#'>
+                            <Link className='nav-link me-5' to='College'>
                                 COLLEGE
                             </Link>
-                            <Link className='nav-link me-5' to='#'>
+                            <Link className='nav-link me-5' to='Enterprise'>
                                 ENTERPRISE
                             </Link>
-                            <Link className='nav-link notes me-5' to='#'>
+                            <Link className='nav-link notes me-5' to='Notes'>
                                 NOTES
                             </Link>
-                            <Link className='nav-link' id='areamask' to='#'>
+                            <Link className='nav-link' id='areamask' to='Airenmask'>
                                 ARIEN MASK
                             </Link>
                         </div>
                     </div>
                 </div>
-                <div>      <img className='settingImage mx-3' sx={{
-                    "& .settingImage:hover": {
-
-                    }
-                }} src={Setting} alt="" />     <Badge className='badge' sx={{
-                    "& .MuiBadge-badge": {
-                        color: "gray",
-                        backgroundColor: "#d0d5db"
-                    },
-                    "& .MuiBadge-badge:hover": {
-                        color: "white",
-                        backgroundColor: "black"
-                    }
-                }} badgeContent={0} showZero>
-                        <i class="mx-1 fs-5 fa-solid fa-cart-shopping text-white"></i></Badge>
-                </div>
+               
                 {/* 
             <div className='d-flex float-right'>
                 <div className='setting'>
