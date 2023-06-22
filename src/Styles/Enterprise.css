@@ -1,0 +1,206 @@
+.Hondaimg {
+    width: 220px;
+    margin-left: 850px;
+}
+
+.Hondatext {
+    color: black;
+    font-weight: 500;
+    font: proxima thin;
+}
+
+.Enterprice1 {
+    position: relative;
+}
+
+.workwear {
+    margin-left: 250px;
+    position: absolute;
+    left: 534px;
+    top: 770px;
+    font-size: 26px;
+    font-weight: 700;
+    color: #978F8F;
+
+
+}
+
+.fa-chevron-down {
+    margin-top: 250px;
+    position: absolute;
+    top: 600px;
+    color: #978F8F;
+    font-size: large;
+    left: 664px;
+    font-weight: bold;
+    animation: mymoves 1s infinite;
+    margin-left: 240px;
+
+
+}
+
+@keyframes mymoves {
+    from {
+        top: 600px;
+    }
+
+    to {
+        top: 590px;
+    }
+}
+
+.imagefixed {
+    background-size: cover;
+    background-image: url(http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/Enterprises-1.jpg);
+    background-position: center 122px;
+    background-attachment: fixed;
+    min-height: 1000vh;
+    background-repeat: no-repeat;
+}
+
+.menapi {
+    background-color: rgb(223, 220, 220) !important;
+    width: 100%;
+    height: 730px;
+    position: relative;
+    top: 750px;
+}
+
+.workrelaxed {
+    color: black;
+    font-weight: 700;
+
+}
+
+.whenwe {
+    color: black;
+    font-weight: 500;
+}
+
+.westill {
+    color: black;
+    font-weight: 500;
+
+}
+
+.menscards {
+    background: none;
+    margin-left: -50px;
+    transition: transform 0.3s ease;
+
+}
+
+
+.menscards:hover {
+    transform: scale(0.9);
+}
+
+.imgcontent1 {
+    font-size: 20px;
+    margin-top: -300px;
+    color: #978F8F;
+    margin-right: 200px;
+
+}
+
+.imgcontent2 {
+    font-size: 23px;
+    font-weight: 200;
+    color: #978F8F;
+    margin-left: -105px;
+
+}
+
+.stepsbackground {
+    background-color: black;
+    position: relative;
+    margin-top: 1480px;
+    width: 100%;
+    height: 600px;
+}
+
+.thisishow {
+    color: #978F8F;
+    font-weight: 700;
+    margin-top: 100px;
+}
+
+.stepsimg {
+    margin-left: 40px;
+    padding-top: 40px;
+    margin-top: -60px;
+}
+
+
+
+
+.timeline {
+    position: relative;
+    margin-top: 70px;
+    margin-left: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1480px;
+}
+
+.point {
+    position: relative;
+    width: 30px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(223, 202, 202, 0.103);
+    color: #978F8F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.point1 {
+    position: relative;
+    width: 30px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(223, 202, 202, 0.103);
+    color: #978F8F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.point::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: calc(50% + 10px);
+    width: 190px;
+    height: 1px;
+    background-color: #978F8F;
+    font-weight: 100;
+}
+
+.point:first-child::before {
+    display: none;
+}
+
+.point:last-child {
+    margin-right: 0;
+}
+
+
+.stepscontent1 {
+    color: #978F8F;
+    font-weight: 200;
+    font-size: 30px;
+}
+
+.stepscontent2 {
+    color: #978F8F;
+    font-weight: 200;
+    font-size: 30px;
+}

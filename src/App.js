@@ -8,6 +8,7 @@ import Notes from './Components/Notes';
 import College from './Components/College';
 import Enterprice from './Components/Enterprise';
 import Airenmask from './Components/Arienmask'
+import Errorcomponent from './Components/Errorcomponent';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route exact path='Enterprise' element={<Enterprice />} />
         <Route exact path='Notes' element={<Notes />} />
         <Route exact path='Airenmask' element={<Airenmask />} />
+        <Route path='*' element={<Errorcomponent />}/>
 
 
       </Routes>

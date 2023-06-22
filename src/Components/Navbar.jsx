@@ -42,6 +42,7 @@ function Navbar() {
                             <Link className='nav-link' id='areamask' to='Airenmask'>
                                 ARIEN MASK
                             </Link>
+                            
                         </div>
                     </div>
                 </div>
