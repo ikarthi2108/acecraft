@@ -11,7 +11,7 @@ function Navbar() {
             <Link className='titlename ' to='/'>
                 acecraft
             </Link>
-            <nav className='navbar navbar-expand-lg'>
+            <nav className='navbar-expand-lg'>
                 <div className='container-fluid'>
                     <Link className='navbar-brand' to='#'></Link>
                     <button

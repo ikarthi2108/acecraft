@@ -19,7 +19,7 @@ function App() {
 
       <Routes>
         <Route exact path='/' element={<Acecraft />} />
-        <Route exact path='School' element={<School />} />
+        <Route exact path='School' element={<School />} /> 
         <Route exact path='College' element={<College />} />
         <Route exact path='Enterprise' element={<Enterprice />} />
         <Route exact path='Notes' element={<Notes />} />
@@ -28,8 +28,8 @@ function App() {
 
 
       </Routes>
-
       <Footer />
+     
     </div>
   );
 }

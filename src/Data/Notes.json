@@ -110,5 +110,47 @@
             "stepscontent1": "Delivery",
             "stepscontent2": ""
         }
+    ],
+
+
+    "schools": [
+
+        {
+            "schoolid":1,
+            "schoolname":"JGI",
+            "logo":"http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/jain.jpeg"
+        },
+        {
+            "schoolid":2,
+            "schoolname":"RV",
+            "logo":"http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/rvschool.png"
+        },
+        {
+            "schoolid":3,
+            "schoolname":"SOPHIA",
+            "logo":"http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/sophias.jpg"
+        },
+       
+        {
+            "schoolid":4,
+            "schoolname":"KUMARANS",
+            "logo":"http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/kumarans.png"
+        },
+        {
+            "schoolid":5,
+            "schoolname":"NEW HORIZON GURUKUL",
+            "logo":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/Logo-%20New%20Horizon%20Gurukul.jpg"
+        },
+        {
+            "schoolid":6,
+            "schoolname":"CISB",
+            "logo":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/cgis.png"
+        },
+        {
+            "schoolid":7,
+            "schoolname":"NHIS",
+            "logo":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/NHIS%20LOGO%20Jpeg.jpg"
+        }
+
     ]
 }
