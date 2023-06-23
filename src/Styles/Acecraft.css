@@ -1,5 +1,5 @@
 .banner {
-    background-image: url(../Components/Home1.jpg);
+    background-image: url(../assests/Home1.jpg);
     background-position: center;
     background-size: cover;
     padding: 190px 0 450px;
@@ -82,7 +82,7 @@ h2 {
 }
 
 #card_1 {
-    background-image: url(../Components/Home2.jpg);
+    background-image: url(../assests/Home2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -101,7 +101,7 @@ h2 {
 
 
 #card_2 {
-    background-image: url(../Components/Home3.jpg);
+    background-image: url(../assests/Home3.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

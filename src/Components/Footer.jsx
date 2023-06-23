@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import '../Styles/Footer.css';
-import Fb from '../Components/Fb.png';
-import Insta from '../Components/Insta.png';
-import Linkedin from '../Components/Linkedin.png';
+import Fb from '../assests/Fb.png' ;
+import Insta from '../assests/Insta.png';
+import Linkedin from '../assests/Linkedin.png'
 
 export default function Footer() {
   return (
