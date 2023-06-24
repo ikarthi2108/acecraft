@@ -19,14 +19,14 @@ export default function College() {
         <>
             <div className="" style={{ position: 'relative', backgroundColor: 'black' }}>
 
-                <img src={College1} alt="college1img" className="img-responsive img-fluid" style={{ backgroundColor: 'black' }} />
+                <img src={College1} alt="college1img" className="img-responsive img-fluid" style={{ backgroundColor: 'black', width: '100vw' }} />
 
 
                 <div className="container">
 
                     <div className="row">
 
-                        <div className="col offset-7 pe-5" style={{ position: 'absolute', marginTop: '-400px', color: '#978F8F' }}>
+                        <div className="offset-7" style={{ position: 'absolute', marginTop: '-400px', color: '#978F8F' }}>
 
                             <h1>The acecraft Collection.</h1>
 
@@ -50,55 +50,63 @@ export default function College() {
 
 
             <div className="container-fluid itemsdiv">
-
-                <div className="row">
-
-                    <div className="col offset-4 ">
-                        <img src={Woolenball} alt="Woolenball" className="woolenball" width='390px' />
-                        <h1 className="" style={{ color: '#978F8F' }}>Naturally Cutting-Edge.</h1>
-                        <h6 style={{ color: 'black', fontWeight: '400' }}>The ‘best of both worlds’ has a new definition. Every fabric in<br /> the acecraft line-up is made from a blend of two fibres to<br /> give you the best range. No tech involved - it’s just the touch<br /> of nature.</h6>
+                <div className="row justify-content-center">
+                    <div className="col offset- mt-5">
+                        <div className="text-center">
+                            <img src={Woolenball} alt="Woolenball" className="woolenball" width="280px" />
+                        </div>
+                        <div className="text-center mt-3">
+                            <h1 style={{ color: '#978F8F' }}>Naturally Cutting-Edge.</h1>
+                            <h6 style={{ color: 'black', fontWeight: '400' }}>
+                                The ‘best of both worlds’ has a new definition. Every fabric in<br /> the acecraft line-up is made from a blend of two fibers to <br />give you the best range.
+                                No tech involved - it’s just the touch<br /> of nature.
+                            </h6>
+                        </div>
                     </div>
-
                 </div>
 
                 <div className="row">
-
-                    <div className="col offset-2 mt-n5">
-                        <img src={Wool} alt="Wool" width='250px' className="mt-5 pt-5" />
-                        <h1 className="offset-6 mt-n5" style={{ color: '#978F8F' }}>The Blended Wool</h1>
-                        <h6 style={{ color: 'black', fontWeight: '400' }} className="offset-6">The Blended Wool is a class apart - with a mix of polyester <br /> for its wrinkle/crease-resistance and wool for warmth and absorbency,<br />  end your day looking the same as how you<br /> began it.</h6>
+                    <div className="col offset-md-3 ">
+                        <div className="d-flex align-items-center flex-md-row flex-column">
+                            <img src={Wool} alt="Wool" width="220px" className="pt-md-5 ms-5" style={{ marginRight: '120px' }} />
+                            <div className=" mt-2"  >
+                                <h1 style={{ color: '#978F8F',marginLeft: '200px' }}>The Blended Wool</h1>
+                                <h6 style={{ color: 'black', fontWeight: '400' ,marginLeft: '200px'}}>
+                                    The Blended Wool is a class apart - with a mix of polyester<br /> for its wrinkle/crease-resistance and wool for warmth and <br />absorbency, end your day looking the same as how you<br /> began it.
+                                </h6>
+                            </div>
+                        </div>
                     </div>
-
-                </div>
-
-
-                <div className="row">
-
-                    <div className="col  mt-n5">
-                        <img src={Cotton} alt="Cotton" width='230px' className="mt-5 offset-8 pt-5" />
-                        <h1 className="mt-n5 offset-2" style={{ color: '#978F8F' }}>The Blended Cotton</h1>
-                        <h6 style={{ color: 'black', fontWeight: '400' }} className="offset-2">The Blended Cotton is extremely strong and breathable.<br /> Easy to iron, this variant shrinks lesser than pure cotton and <br />retains its colour, which makes it a favourite choice for your<br /> everyday college wear.</h6>
-
-                    </div>
-
                 </div>
 
 
                 <div className="row">
-
-                    <div className="col offset-2 mt-n5">
-
-                        <img src={Viscose} alt="Cotton" width='230px' className="mt-5" />
-                        <h1 className="offset-6 mt-n5" style={{ color: '#978F8F' }}>The Blended Viscose</h1>
-                        <h6 style={{ color: 'black', fontWeight: '400' }} className="offset-6">The Blended Viscose addition combines two ends of the<br /> spectrum - durability and a sense of softness. While the<br /> polyester contributes to resilience and shape retention, the<br /> viscose adds on to the overall absorbency, both sharpening <br />and softening your look at the same time.</h6>
-
+                    <div className="col mt-md-n5 p-5">
+                        <div className="d-flex align-items-center flex-md-row flex-column">
+                            <img src={Cotton} alt="Cotton" width="200px" className="mt-md-5 offset-md-7 pt-md-4" />
+                            <div className="ml-md-5 mt-md-0 mt-3">
+                                <h1 style={{ color: '#978F8F',marginLeft:'-800px',marginTop:'100px' }}>The Blended Cotton</h1>
+                                <h6 style={{ color: 'black', fontWeight: '400',marginLeft:'-800px' }}>The Blended Cotton is extremely strong and breathable.<br /> Easy to iron, this variant shrinks lesser than pure cotton and<br /> retains its color, which makes it a favorite choice for your<br /> everyday college wear.</h6>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
 
+                <div className="row">
+                    <div className="col offset-md-4 mt-md-n5 p-5">
+                        <div className="d-flex align-items-center flex-md-row flex-column">
+                            <img src={Viscose} alt="Viscose" width="230px" className="mt-md-5" />
+                            <div className="ml-md-5 mt-md-0 mt-3 p-5 ">
+                                <h1 style={{ color: '#978F8F', }}>The Blended Viscose</h1>
+                                <h6 style={{ color: 'black', fontWeight: '400' }}>The Blended Viscose addition combines two ends of the<br /> spectrum - durability and a sense of softness. While the<br /> polyester contributes to resilience and shape retention, the<br /> viscose adds on to the overall absorbency, both sharpening<br /> and softening your look at the same time.</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <img src={College2} alt='college' className="" />
+
+            <img src={College2} alt='college' style={{ width: '100vw' }}  />
 
             <div className="container" style={{ position: 'absolute', marginTop: '-150px', color: '#978F8F' }}>
                 <div className="row mt-n5">
@@ -117,8 +125,8 @@ export default function College() {
                 <Black />
             </div>
 
-            <div className="" style={{backgroundColor:"black"}}>
-                <img src={College3} alt="college3img" className="" style={{borderColor: 'black'}} />
+            <div className="" style={{ backgroundColor: "black" }}>
+                <img src={College3} alt="college3img" className="" style={{ borderColor: 'black', width: '100vw' }} />
             </div>
 
         </>
