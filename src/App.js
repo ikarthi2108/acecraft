@@ -4,7 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 import Acecraft from './Components/Acecraft';
 import Footer from './Components/Footer';
 import Notes from './Components/Notes';
- import School from './Components/School';
+ import School,{Uniformdisplay, Uniforms} from './Components/School';
 import College from './Components/College';
 import Enterprice from './Components/Enterprise';
 import Airenmask from './Components/Arienmask'
@@ -25,6 +25,8 @@ function App() {
         <Route exact path='Notes' element={<Notes />} />
         <Route exact path='Airenmask' element={<Airenmask />} />
         <Route path='*' element={<Errorcomponent />}/>
+        <Route exact path='/Uniforms' element={<Uniforms />}/>
+        <Route exact path='Uniform/:id' element={<Uniformdisplay />} />
 
 
       </Routes>
