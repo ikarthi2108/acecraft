@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import '../Styles/school.css'
 import { Link } from 'react-router-dom';
 import '../Styles/Uniform.css'
+import sizeguide from '../assests/sizess.png'
 
 
 export default function School() {
@@ -177,9 +178,9 @@ function Fifthscroll() {
 
 
 
-
 export const Uniforms = () => {
   const [dressData, setDressData] = useState([]);
+  const [sortOption, setSortOption] = useState('');
 
   useEffect(() => {
     fetch('http://localhost:4000/dress')
@@ -192,10 +193,32 @@ export const Uniforms = () => {
       });
   }, []);
 
+  const handleSortChange = event => {
+    setSortOption(event.target.value);
+  };
+
+  const getSortedData = () => {
+    const sortedData = [...dressData];
+    switch (sortOption) {
+      case 'ascending':
+        sortedData.sort((a, b) => a.title.toLowerCase().localeCompare(b.title.toLowerCase()));
+        break;
+      case 'descending':
+        sortedData.sort((a, b) => b.title.toLowerCase().localeCompare(a.title.toLowerCase()));
+        break;
+      default:
+        break;
+    }
+    return sortedData;
+  };
+
+  const sortedData = getSortedData();
+
   return (
     <div>
       <div>
-        <img src="http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/MJK07401.jpg" alt="bgimg" className='img-fluif'></img>    </div>
+        <img src="http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/MJK07401.jpg" alt="bgimg" className='img-fluid'></img>
+      </div>
       <div
         style={{
           position: 'absolute',
@@ -204,15 +227,22 @@ export const Uniforms = () => {
           transform: 'translate(-50%, -50%)',
           textAlign: 'center',
           color: 'grey',
-
         }}
       >
         <h2 id='imgt'>Decode</h2>
         <h2 id='imgt1'>Your kind of designer uniforms.</h2>
       </div>
+      <div className='ms-5 mt-4'>
+
+        <select id="sortOrder" value={sortOption} onChange={handleSortChange}>
+          <option value="/">Sort</option>
+          <option value="ascending">Ascending</option>
+          <option value="descending">Descending</option>
+        </select>
+      </div>
       <div className="uniforms-container">
         {dressData.length > 0 ? (
-          dressData.map(item => (
+          sortedData.map(item => (
             <div className="uniform-item" key={item.id}>
               <Link key={dressData.id} to={`/Uniform/${item.id}`} style={{ textDecoration: 'none' }}>
                 <div className="uniform-item-image">
@@ -236,11 +266,12 @@ export const Uniforms = () => {
 
 
 
-
 export const Uniformdisplay = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const [scluniform, setscluniform] = useState(null);
+  const [selectedSize, setSelectedSize] = useState('');
+  const [selectedQuantity, setSelectedQuantity] = useState('');
 
   useEffect(() => {
     fetch(`http://localhost:4000/dress/${id}`)
@@ -256,12 +287,21 @@ export const Uniformdisplay = () => {
     navigate('School/Uniforms');
   };
 
+  const handleSizeChange = (event) => {
+    setSelectedSize(event.target.value);
+  };
+
+  const handleQuantityChange = (event) => {
+    setSelectedQuantity(event.target.value);
+  };
+  
+
   return (
     <div className='container-fluid ms-5' style={{ paddingBottom: '160px' }}>
       <div className='row mt-5 ms-5'>
-        <div className='col-6 mt-5'>
+        <div className='col-5 mt-5'>
           <img
-            className='mt-5 ps-5 ms-5'
+            className='ps-5 ms-5'
             src={scluniform.image}
             alt='sclimg'
             height={550}
@@ -269,45 +309,161 @@ export const Uniformdisplay = () => {
             onClick={handleGoBack}
           />
         </div>
-        <div className='col-6'>
-          <h5 style={{ color: 'black', fontSize: '35px' }}>{scluniform.prodname}</h5>
-          <div>
-            <label style={{ fontWeight: 'bold' }}>Product Code:</label>
-            <span style={{ fontSize: '25px', marginLeft: '10px' }}>{scluniform.prodcode}</span>
+        <div className='col-3 mt-5'>
+          <h1 style={{ color: 'black', fontSize: '35px' }}>{scluniform.title}</h1>
+          <div className='d-flex'>
+            <h6 style={{ fontWeight: 'bold', color: 'black' }}>Product Code:</h6>
+            <h6 className='mt-1' style={{ fontSize: '14px', color: 'black' }}>
+              {scluniform.prodcode}
+            </h6>
+          </div>
+          <div className='d-flex'>
+            <h6 style={{ fontWeight: 'bold', color: 'black' }}>Brand:</h6>
+            <h6 className='mt-1' style={{ fontSize: '14px', color: 'black' }}>
+              {scluniform.brand}
+            </h6>
+          </div>
+          <div className='d-flex'>
+            <h6 style={{ fontWeight: 'bold', color: 'black' }}>Sold By:</h6>
+            <h6 className='mt-1' style={{ fontSize: '14px', color: 'black' }}>
+              {scluniform.soldby}
+            </h6>
           </div>
           <div>
-            <label style={{ fontWeight: 'bold' }}>Brand:</label>
-            <span style={{ fontSize: '25px', marginLeft: '10px' }}>{scluniform.brand}</span>
+            <h5
+              className='pt-3'
+              style={{
+                color: 'black',
+                fontSize: '40px',
+                fontWeight: '450',
+              }}
+            >
+              {scluniform.discountedprice}
+            </h5>
+
+            <h6
+              className='ms-5 ps-5 mt-n5'
+              style={{
+                color: 'black',
+                fontSize: '24px',
+                fontWeight: '500',
+              }}
+            >
+              <del>{scluniform.originalprice}</del>
+            </h6>
           </div>
+       
           <div>
-            <label style={{ fontWeight: 'bold' }}>Sold By:</label>
-            <span style={{ fontSize: '25px', marginLeft: '10px' }}>{scluniform.soldby}</span>
+            <h5
+              className='text-center justify-content-center pt-1 mt-3 ms-4'
+              style={{
+                color: 'black',
+                fontSize: '16px',
+                backgroundColor: 'black',
+                color: 'white',
+                width: '69px',
+                height: '30px',
+                fontWeight: '400',
+              }}
+            >
+              {scluniform.discount}
+            </h5>
           </div>
+          <hr></hr>
           <div>
-            <label style={{ fontWeight: 'bold' }}>Discounted Price:</label>
-            <span style={{ fontSize: '25px', marginLeft: '10px' }}>{scluniform.dprice}</span>
+            <button
+              type='button'
+              className='btn mt-2 ms-n1'
+              data-bs-toggle='modal'
+              data-bs-target='#exampleModal'
+              style={{
+                color: 'black',
+                fontSize: '14px',
+                backgroundColor: 'black',
+                color: 'white',
+              }}
+            >
+              SIZE GUIDE
+            </button>
           </div>
-          <div>
-            <label style={{ fontWeight: 'bold' }}>Original Price:</label>
-            <span style={{ fontSize: '25px', marginLeft: '10px' }}>{scluniform.oprice}</span>
+
+          {/* Dropdown for selecting size */}
+          <div className='mt-4 d-flex'>
+            <label htmlFor='selectSize' className='form-label' style={{ color: 'white', backgroundColor: 'black' }}>
+              Select Size
+            </label>
+            <select
+              id='selectSize'
+              className='form-select'
+              value={selectedSize}
+              onChange={handleSizeChange}
+              style={{ width: "100px" }}
+            >
+              <option value=''>Choose Size</option>
+              <option value='18'>18</option>
+              <option value='20'>20</option>
+              <option value='22'>22</option>
+              <option value='24'>24</option>
+              <option value='26'>26</option>
+              <option value='28'>28</option>
+              <option value='30'>30</option>
+              <option value='32'>32</option>
+              <option value='34'>34</option>
+            </select>
           </div>
-          <div>
-            <label style={{ fontWeight: 'bold' }}>Discount:</label>
-            <span style={{ fontSize: '25px', marginLeft: '10px' }}>{scluniform.discount}</span>
+          <hr></hr>
+          <div className='mt-4 d-flex'>
+            <label htmlFor='selectQuantity' className='form-label' style={{ color: 'white', backgroundColor: 'black' }}>
+              Quantity
+            </label>
+            <input
+              type='number'
+              id='selectQuantity'
+              className='form-control'
+              value={selectedQuantity}
+              onChange={handleQuantityChange}
+              style={{ width: '100px' }}
+            />
           </div>
-          <button type='button' className='btn btn-dark mt-5'>
-            BUY NOW
-          </button>
-          <button type='button' className='btn btn-dark mt-5 ms-5'>
+
+
+          <button style={{ backgroundColor: 'black' }} type='button' className='btn btn-dark mt-5'>
             ADD TO CART
           </button>
+          <button style={{ backgroundColor: 'black' }} type='button' className='btn btn-dark mt-5 ms-5'>
+            Buy Now
+          </button>
+
+          {/* modal for size chart */}
+          <div className='modal fade' id='exampleModal' tabindex='' aria-labelledby='exampleModalLabel' aria-hidden='true'>
+            <div className='modal-dialog'>
+              <div className='modal-content' style={{ width: '1100px' }}>
+                <div className='modal-header'>
+                  <h3 className='modal-title text-center justify-content-center' id='exampleModalLabel' style={{ color: 'black' }}>
+                    SIZE GUIDE
+                  </h3>
+                  <button type='button' className='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
+                </div>
+                <div className='modal-body' style={{ width: '1300px' }}>
+                  <h3 className='text-center' style={{ color: 'black', fontSize: '35px' }}>
+                    a c e c r a f t
+                  </h3>
+                  <img src={sizeguide} alt='size' style={{ width: '800px' }} />
+                  <img src={scluniform.image} alt='srcimg' width='250px' />
+                </div>
+                <div className='modal-footer'>
+                  <button type='button' className='btn' data-bs-dismiss='modal' style={{ backgroundColor: 'black', color: 'white' }}>
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   );
 };
-
-
 
 
 
