@@ -154,3 +154,27 @@
     }
   }
   
+  
+  .navbarfull {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+  }
+  
+  .setting-icon {
+    font-size: 1.5rem;
+  }
+  
+  .cart-icon {
+    font-size: 1.2rem;
+  }
+  
+  .badge {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 0.25rem;
+    font-size: 0.8rem;
+  }
+  
