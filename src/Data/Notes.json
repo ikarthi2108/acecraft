@@ -466,6 +466,19 @@
       "city": "Coimbatore",
       "state": "Andhra Pradesh",
       "gstNumber": "12345"
+    },
+    {
+      "id": 1687956518082,
+      "firstName": "kavin",
+      "lastName": "k",
+      "email": "kavin123@gmail.com",
+      "password": "Kavin@123",
+      "userType": "school",
+      "dealershipName": "ktmco",
+      "dealershipCode": "123321",
+      "city": "Tiruppur",
+      "state": "Andhra Pradesh",
+      "gstNumber": "54321"
     }
   ]
 }
