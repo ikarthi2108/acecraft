@@ -99,6 +99,7 @@
       font-size: 12px;
     }
   }
+<<<<<<< HEAD
 
 
 .icon-row {
@@ -108,3 +109,30 @@
   margin-left: 1140px; /* Add right margin of 600px */
 }
 
+=======
+  
+  
+  .navbarfull {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+  }
+  
+  .setting-icon {
+    font-size: 1.5rem;
+  }
+  
+  .cart-icon {
+    font-size: 1.2rem;
+  }
+  
+  .badge {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 0.25rem;
+    font-size: 0.8rem;
+  }
+  
+>>>>>>> a7f6a36c802aff7699425260af30a39038d32b86
