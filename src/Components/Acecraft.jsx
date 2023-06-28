@@ -14,7 +14,7 @@ export default function Acecraft() {
           <div className="row justify-content-center" id="arrow-link">
             <div className="ml-4 text-center">
               {/* eslint-disable-next-line */}
-              <p><Link href="#">ACECRAFT FOR COLLAGES<i className="fa-sharp fa-solid fa-angle-right"></i></Link></p>
+              <p><Link to='/College'>ACECRAFT FOR COLLAGES<i className="fa-sharp fa-solid fa-angle-right"></i></Link></p>
             </div>
           </div>
         </div>
@@ -42,7 +42,7 @@ export function Acecraft1() {
                   <div className="row justify-content-center" id="arrow-link">
                     <div className="text-center me-5">
                       {/* eslint-disable-next-line */}
-                      <p><a href="#">ACECRAFT FOR COLLAGES<i className="fa-sharp fa-solid fa-angle-right"></i></a></p>
+                      <p><Link to='/School'>ACECRAFT FOR Schools<i className="fa-sharp fa-solid fa-angle-right"></i></Link></p>
                     </div>
                   </div>
                 </div>
@@ -61,7 +61,7 @@ export function Acecraft1() {
                   <div className="row justify-content-center" id="arrow-link">
                     <div className="text-center  me-3" >
                       {/* eslint-disable-next-line */}
-                      <p><a href="#">ACECRAFT FOR COLLAGES<i className="fa-sharp fa-solid fa-angle-right"></i></a></p>
+                      <p><Link to='/Enterprise'>ACECRAFT FOR Enterprise<i className="fa-sharp fa-solid fa-angle-right"></i></Link></p>
                     </div>
                   </div>
                 </div>

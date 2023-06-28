@@ -6,6 +6,7 @@ import '../Styles/Uniform.css'
 import sizeguide from '../assests/sizess.png'
 
 
+
 export default function School() {
   return (
     <>
@@ -60,7 +61,7 @@ function Imagescroll() {
     <div className="main">
 
     </div>
-  )
+  );
 }
 
 function Text() {
@@ -76,9 +77,9 @@ function Secondscroll() {
   return (
     <div className="section2">
       <section className="bg-black">
-        <div class="container-fluid">
+        <div className="container-fluid">
           <div id="text1">
-            <div class="fs-1 text-center">
+            <div className="fs-1 text-center">
               <p>Aesthetically advanced,</p>
               <p> our designer uniforms are<b> a cut above the rest,</b></p>
               <p><b>in every sense of the word.</b>
@@ -513,6 +514,7 @@ export const Uniformdisplay = () => {
         <div style={{ background: '#f5f5f5', padding: '10px ' }}>
           <h6 >Related products</h6>
         </div>
+        
       </div>
     </div>
 

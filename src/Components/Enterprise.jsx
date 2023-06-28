@@ -127,7 +127,7 @@ function Cards() {
               <h1 className="text-center  thisishow"> This is how we do it.</h1>
 
 
-              <div class="timeline">
+              <div className="timeline">
                   <div className="point">1</div>
                   <div className="point">2</div>
                   <div className="point">3</div>
@@ -182,7 +182,7 @@ function Enterpriselast() {
       <div className="row">
         {imgs.map((last) => (
           <div className="col-md-12" key={last.id}>
-            <div className="" >
+            <div>
               <img src={last.img} alt="lastimg" className="lastimg" />
             </div>
           </div>

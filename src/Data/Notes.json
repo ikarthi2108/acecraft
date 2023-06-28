@@ -479,6 +479,19 @@
       "city": "Tiruppur",
       "state": "Andhra Pradesh",
       "gstNumber": "54321"
+    },
+    {
+      "id": 1687965421499,
+      "firstName": "sivabharath",
+      "lastName": "s",
+      "email": "siva@gmail.com",
+      "password": "Siva@123",
+      "userType": "enterprise",
+      "dealershipName": "sivaco",
+      "dealershipCode": "433434",
+      "city": "chennai",
+      "state": "Arunachal Pradesh",
+      "gstNumber": "3444444"
     }
   ]
 }
