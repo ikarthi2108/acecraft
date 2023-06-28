@@ -43,58 +43,6 @@
     font-weight: bold;
   }
   
-  .setting {
-    font-weight: 900;
-  }
-  
-  .setting li ul {
-    display: none;
-    position: absolute;
-    top: 100%;
-    background-color: #fff;
-    opacity: 0.5;
-    width: 200px;
-    height: 1600px;
-  }
-  
-  .setting li:hover ul {
-    display: block;
-  }
-  
-  .setting li ul li {
-    display: block;
-    color: rgb(49, 48, 48);
-    font-size: 23px;
-    font-weight: 400;
-    margin-left: -50px;
-    background-color: #000;
-  }
-  
-  .setting li ul li a {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    color: #000;
-    text-decoration: none;
-    height: 1600px;
-    opacity: 1;
-  }
-  
-  .setting li ul li a img {
-    width: 20px;
-    margin-right: 10px;
-    opacity: 0.5;
-  }
-  
-  .setting li ul li a:hover {
-    background-color: #f2f2f2;
-    opacity: 1;
-  }
-  
-  .setting li ul li a:hover img {
-    opacity: 1;
-    background-color: #8596ff;
-  }
   
   /* Responsive Styles */
   @media (max-width: 991px) {
@@ -139,9 +87,7 @@
       justify-content: flex-end;
     }
   
-    .navbar-nav {
-      margin-right: 10px;
-    }
+  
   
     .setting {
       margin-left: 10px;
@@ -153,4 +99,12 @@
       font-size: 12px;
     }
   }
-  
+
+
+.icon-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Align items to the right end */
+  margin-left: 1140px; /* Add right margin of 600px */
+}
+

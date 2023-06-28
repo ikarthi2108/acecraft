@@ -66,3 +66,16 @@ body {
   overflow-x: hidden;
   color: #978f8f;
 }
+/* ======= */
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown>.dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+.description{
+  padding: 2.5em 40em 0 9.8em;
+  color: black;
+}

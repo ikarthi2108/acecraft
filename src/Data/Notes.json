@@ -1,468 +1,471 @@
 {
-    "Notes": [
-        {
-            "id": 1,
-            "title": "STYLING ACCESSORIES THAT COMPLEMENT YOUR FORMAL WEAR"
-        },
-        {
-            "id": 2,
-            "title": "5 CLASSIC LOOKS FOR HER"
-        },
-        {
-            "id": 3,
-            "title": "ACING TOUR FORMAL ATTIRE"
-        },
-        {
-            "id": 4,
-            "title": "SELECTING AND STYLING YOUR WORKWEAR"
-        },
-        {
-            "id": 5,
-            "title": "LETS TALK 'BODY TYPES', WOMEN!"
-        },
-        {
-            "id": 6,
-            "title": "5 CLASSIC LOOKS FOR HIM"
-        },
-        {
-            "id": 7,
-            "title": "TIPS FOR A GREAT OUTFIT"
-        },
-        {
-            "id": 8,
-            "title": "DRESSING TO SUCCED:THE IMPORTANCE OF 'FORMALS' "
-        },
-        {
-            "id": 9,
-            "title": "WORKWEAR FOR ALL SEASONS:THE WOMEN EDIT"
-        },
-        {
-            "id": 10,
-            "title": "THE ACECRAFT DIFFERENCE"
-        },
-        {
-            "id": 11,
-            "title": "CORPORATE TO CUPCAKES!-STORY OF A SUPERWOMAN."
-        },
-        {
-            "id": 12,
-            "title": "HOW TO COMPLETE YOUR COLLEGE LOOK"
-        },
-        {
-            "id": 13,
-            "title": "DRESS THE RIGHT WAY TO IMPRESS THE RIGHT WAY"
-        }
-    ],
-    "mens": [
-        {
-            "id": 1,
-            "img": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/Enterprises-2.png",
-            "imgtxt1": "F(IT) MATTERS .",
-            "imgtxt2": "A size for every one"
-        },
-        {
-            "id": 2,
-            "img": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/Enterprises-3.png",
-            "imgtxt1": "PERSONALISED BRANDING",
-            "imgtxt2": "Your design.Our customization."
-        },
-        {
-            "id": 3,
-            "img": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/Enterprises-4.png",
-            "imgtxt1": "TEAM UP FOR TEAM WEAR",
-            "imgtxt2": "Bulk orders delivered seamlessly."
-        }
-    ],
-    "steps": [
-        {
-            "stepsid": 1,
-            "stepsimg": "http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/icon-1.png",
-            "stepscontent1": "Single line",
-            "stepscontent2": "brief"
-        },
-        {
-            "stepsid": 2,
-            "stepsimg": "http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/icon-2.png",
-            "stepscontent1": "Mind",
-            "stepscontent2": "mapping"
-        },
-        {
-            "stepsid": 3,
-            "stepsimg": "http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/icon-3.png",
-            "stepscontent1": "Design and",
-            "stepscontent2": "details"
-        },
-        {
-            "stepsid": 4,
-            "stepsimg": "http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/icon-4.png",
-            "stepscontent1": "Sampling",
-            "stepscontent2": ""
-        },
-        {
-            "stepsid": 5,
-            "stepsimg": "http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/icon-5.png",
-            "stepscontent1": "Manufacturing",
-            "stepscontent2": ""
-        },
-        {
-            "stepsid": 6,
-            "stepsimg": "http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/icon-6.png",
-            "stepscontent1": "Delivery",
-            "stepscontent2": ""
-        }
-    ],
-
-
-    "schools": [
-
-        {
-            "schoolid":1,
-            "schoolname":"JGI",
-            "logo":"http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/jain.jpeg"
-        },
-        {
-            "schoolid":2,
-            "schoolname":"RV",
-            "logo":"http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/rvschool.png"
-        },
-        {
-            "schoolid":3,
-            "schoolname":"SOPHIA",
-            "logo":"http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/sophias.jpg"
-        },
-       
-        {
-            "schoolid":4,
-            "schoolname":"KUMARANS",
-            "logo":"http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/kumarans.png"
-        },
-        {
-            "schoolid":5,
-            "schoolname":"NEW HORIZON GURUKUL",
-            "logo":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/Logo-%20New%20Horizon%20Gurukul.jpg"
-        },
-        {
-            "schoolid":6,
-            "schoolname":"CISB",
-            "logo":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/cgis.png"
-        },
-        {
-            "schoolid":7,
-            "schoolname":"NHIS",
-            "logo":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/NHIS%20LOGO%20Jpeg.jpg"
-        }
-
-    ],
-    "Enterpriselast": [
-        {
-            "id": 1,
-            "img": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/Untitled-1.png"
-        },
-        {
-            "fourid": 2,
-            "img": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/Untitled-2.png"
-        }
-    ],
-    "honda":[
-        {
-            "id":1,
-            "image":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/honda.png",
-            "text":"HONDA CAR'S DEALER MANPOWER UNIFORM"
-        }
-    ], 
-    "dress":[
-        {
-            "id":1,
-            "image":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/627bd600820ea897cb5a5cfc/webp/day-wear-polos-480x480.jpg",
-            "title":"NHIS Day Wear Polo [Boys & Girls, Nursery-Grade 5]",
-            "prodcode":" NHISDWT18",
-            "brand":" ACECRAFT",
-            "soldby":"Alchemy",
-            "discountedprice":"₹340",
-            "originalprice":" ₹450",
-            "discount":"24% OFF"
-        },
-        {
-            "id":2,
-            "image":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d6e74cbfb666ae1145869/webp/elementary-school-480x480.jpg",
-            "title":"NHIS Day Wear Polo [Boys & Girls, Nursery-Grade 5]",
-            "prodcode":" CIEDPT20",
-            "brand":" ACECRAFT",
-            "soldby":"Alchemy",
-            "discountedprice":"₹450",
-            "originalprice":" ₹749",
-            "discount":"40% OFF"
-        },
-        {
-            "id":3,
-            "image":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f798f04705ab2ca347bb/images/5aa0f798f04705ab2ca347bc/5aa0f79ff04705ab2ca347d7/webp/5aa0f79ff04705ab2ca347d7-480x480.jpg",
-            "title":"NHG Shirt [Girls, Grade 1-10]",
-            "prodcode":" NHGSHRT20",
-            "brand":" ACECRAFT",
-            "soldby":"Alchemy",
-            "discountedprice":"₹355",
-            "originalprice":" ₹535",
-            "discount":"34% OFF"
-        },
-        {
-            "id":4,
-            "image":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d6ffdbb47db6b5e246674/webp/middle-school-480x480.jpg",
-            "title":"CIS Sky Day Wear (Grade 6-8)",
-            "prodcode":"  CIMDPT26",
-            "brand":" ACECRAFT",
-            "soldby":"Alchemy",
-            "discountedprice":"₹500",
-            "originalprice":" ₹825",
-            "discount":"39% OFF"
-        },
-        {
-            "id":5,
-            "image":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f5c6f04705ab2ca345c6/images/5aa0f5c6f04705ab2ca345c7/5aa0f5d0f04705ab2ca345f9/webp/5aa0f5d0f04705ab2ca345f9-480x480.jpg",
-            "title":"NHG Shirt [Boys, Grade 1-10]",
-            "prodcode":"  NHBSHRT22",
-            "brand":" ACECRAFT",
-            "soldby":"Alchemy",
-            "discountedprice":"₹355",
-            "originalprice":" ₹535",
-            "discount":"34% OFF"
-        },
-        {
-            "id":6,
-            "image":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/627b614a77743f91a456432d/webp/front-view-nhg-shirt-girls-grade-11-12--480x480.jpg",
-            "title":"NHG County Shirt [Girls, Grade 11-12]",
-            "prodcode":"  NHSGSHXXS",
-            "brand":" ACECRAFT",
-            "soldby":"Alchemy",
-            "discountedprice":"₹550",
-            "originalprice":" ₹750",
-            "discount":"27% OFF"
-        },
-        {
-            "id":7,
-            "image":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d7044a72cc46b41ac7ca4/webp/hi-school-480x480.jpg",
-            "title":"CIS White Day Wear (Grade 9 & 10)",
-            "prodcode":" CIHDPT28",
-            "brand":" ACECRAFT",
-            "soldby":"Alchemy",
-            "discountedprice":"₹500",
-            "originalprice":" ₹825",
-            "discount":"39% OFF"
-        },
-        {
-            "id":8,
-            "image":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/627b614b1b723d40d4a3954a/webp/front-view-nhg-shirt-boys-grade-11-12--480x480.jpg",
-            "title":"NHG County Shirt [Boys, Grade 11-12]",
-            "prodcode":"NHSGSHXXS",
-            "brand":" ACECRAFT",
-            "soldby":"Alchemy",
-            "discountedprice":"₹550",
-            "originalprice":" ₹750",
-            "discount":"27% OFF"
-        },
-        {
-            "id":9,
-            "image":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f5c6f04705ab2ca345c6/images/5aa0f5c6f04705ab2ca345c7/5aa0f5d0f04705ab2ca345f9/webp/5aa0f5d0f04705ab2ca345f9-480x480.jpg",
-            "title":"NHG Shirt [Boys, Grade 1-10]",
-            "prodcode":"NHBSHRT22",
-            "brand":" ACECRAFT",
-            "soldby":"Alchemy",
-            "discountedprice":"₹355",
-            "originalprice":" ₹535",
-            "discount":"34% OFF"
-        },
-        {
-            "id":10,
-            "image":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d708bcbfb666ae1149973/webp/cisb-shorts-480x480.jpg",
-            "title":"CIS Day Wear Shorts",
-            "prodcode":"  CIDCSH1220",
-            "brand":" ACECRAFT",
-            "soldby":"Alchemy",
-            "discountedprice":"₹475",
-            "originalprice":" ₹793",
-            "discount":"40% OFF"
-        },
-        {
-            "id":11,
-            "image":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f01491c2e5ab32f33869/images/5aa0f01491c2e5ab32f3386a/5aa0f01e91c2e5ab32f338a4/webp/5aa0f01e91c2e5ab32f338a4-480x480.jpg",
-            "title":"NHG Jumpers [Girls, Grade 1-4]",
-            "prodcode":"NHJMP2222",
-            "brand":" ACECRAFT",
-            "soldby":"Alchemy",
-            "discountedprice":"₹605",
-            "originalprice":" ₹910",
-            "discount":"34% OFF"
-        },
-        {
-            "id":12,
-            "image":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d70c2cbfb666ae114a053/webp/yellow-house-t-shirt-480x480.jpg",
-            "title":"CIS House T-Shirt (Yellow)",
-            "prodcode":" CISTSY18",
-            "brand":" ACECRAFT",
-            "soldby":"Alchemy",
-            "discountedprice":"₹450",
-            "originalprice":" ₹749",
-            "discount":"40% OFF"
-        },
-        {
-            "id":13,
-            "image":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601ba70c7779a13e481409f5/webp/t4-1-480x480.png",
-            "title":"CIS House T-Shirt (Red)",
-            "prodcode": "CISTSR18",
-            "brand":" ACECRAFT",
-            "soldby":"Alchemy",
-            "discountedprice":"₹450",
-            "originalprice":" ₹745",
-            "discount":"40% OFF"
-            
-        },
-        {
-            "id":14,
-            "image":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f01491c2e5ab32f3383d/images/5aa0f01491c2e5ab32f3383e/5aa0f01f91c2e5ab32f338a7/webp/5aa0f01f91c2e5ab32f338a7-480x480.jpg",
-            "title":"NH Skirt [Girls]",
-            "prodcode":" NHSKT0818",
-            "brand":" ACECRAFT",
-            "soldby":"Alchemy",
-            "discountedprice":"₹545",
-            "originalprice":" ₹865",
-            "discount":"37% OFF"
-        },
-        {
-            "id":15,
-            "image":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/627bd26c3f76019779ceeb39/webp/henley-polos-blue-480x480.jpg",
-            "title":"NHIS Blue Henley Polo [Boys & Girls, Chalukya, Nursery-Grad",
-            "prodcode":"  NHISBT18",
-            "brand":" ACECRAFT",
-            "soldby":"Alchemy",
-            "discountedprice":"₹340",
-            "originalprice":" ₹450",
-            "discount":"24% OFF"
-        },
-        {
-            "id":16,
-            "image":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d7104bb47db6b5e248fc5/webp/cisb-zipper-480x480.jpg",
-            "title":" CIS Zippers (Grade 1-12)",
-            "prodcode":" NHGSHRT20",
-            "brand":" ACECRAFT",
-            "soldby":"Alchemy",
-            "discountedprice":"₹800",
-            "originalprice":" ₹1325",
-            "discount":"40% OFF"
-        },
-        {
-            "id":17,
-            "image":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/627bd8ca3f76019779cffc21/webp/sports-shorts-480x480.jpg",
-            "title":"NHIS Sports Shorts [Boys & Girls, Nursery-Grade 5]",
-            "prodcode":"  NHISSS20",
-            "brand":" ACECRAFT",
-            "soldby":"Alchemy",
-            "discountedprice":"₹495",
-            "originalprice":" ₹650",
-            "discount":"24% OFF"
-        },
-        {
-            "id":18,
-            "image":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f01491c2e5ab32f33874/images/5aa0f01491c2e5ab32f33875/5aa0f02091c2e5ab32f338b4/webp/5aa0f02091c2e5ab32f338b4-480x480.jpg",
-            "title":"NHG Blue House Tshirt [Jal, Grade 1-10]",
-            "prodcode":"  NHBTS20",
-            "brand":" ACECRAFT",
-            "soldby":"Alchemy",
-            "discountedprice":"₹345",
-            "originalprice":" ₹520",
-            "discount":"34% OFF"
-        },
-        {
-            "id":19,
-            "image":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f02c91c2e5ab32f338e0/images/5aa0f02c91c2e5ab32f338e1/5aa0f03591c2e5ab32f33940/webp/5aa0f03591c2e5ab32f33940-480x480.jpg",
-            "title":"NHG Cargo [Boys & Girls, Grade 1-12]",
-            "prodcode":" NHCRG4442",
-            "brand":" ACECRAFT",
-            "soldby":"Alchemy",
-            "discountedprice":"₹999",
-            "originalprice":" ₹1500",
-            "discount":"33% OFF"
-        },
-        {
-            "id":20,
-            "image":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/627bdcee87bafb10152cb29b/webp/tennis-joggers-480x480.jpg",
-            "title":"NH Tennis Joggers [Boys & Girls, Nursery-Grade 12]",
-            "prodcode":" NHSJG36",
-            "brand":" ACECRAFT",
-            "soldby":"Alchemy",
-            "discountedprice":"₹800",
-            "originalprice":" ₹1149",
-            "discount":"30% OFF"
-        },
-        {
-            "id":21,
-            "image":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f5c6f04705ab2ca345da/images/5aa0f5c6f04705ab2ca345db/5aa0f5d3f04705ab2ca345fe/webp/5aa0f5d3f04705ab2ca345fe-480x480.jpg",
-            "title":"NHG Neck Tie [Girls, Grade 5-12]",
-            "prodcode":"NHNKTIFR",
-            "brand":" ACECRAFT",
-            "soldby":"Alchemy",
-            "discountedprice":"₹175",
-            "originalprice":" ₹265",
-            "discount":"34% OFF"
-        },
-
-        {
-            "id":22,
-            "image":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f798f04705ab2ca347c5/images/5aa0f798f04705ab2ca347c6/5aa0f7a1f04705ab2ca347dc/webp/5aa0f7a1f04705ab2ca347dc-480x480.png",
-            "title":"NHG Belt [Boys, Grade 5-12]",
-            "prodcode":" NHBLT_FREE",
-            "brand":" ACECRAFT",
-            "soldby":"Alchemy",
-            "discountedprice":"₹300",
-            "originalprice":" ₹450",
-            "discount":"33% OFF"
-        },
-
-        {
-            "id":23,
-            "image":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f02c91c2e5ab32f33922/images/5aa0f02c91c2e5ab32f33923/5aa0f03591c2e5ab32f33937/webp/5aa0f03591c2e5ab32f33937-480x480.jpg",
-            "title":"NH Socks [Boys & Girls, Nursery-Grade 12]",
-            "prodcode":" NHSOK2",
-            "brand":" ACECRAFT",
-            "soldby":"Alchemy",
-            "discountedprice":"₹110",
-            "originalprice":" ₹165",
-            "discount":"33% OFF"
-        },
-
-        {
-            "id":24,
-            "image":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/627bc93b21bae49614958b4a/webp/tennis-polos-orange-480x480.jpg",
-            "title":"NHG Orange Tennis Polos [Agni, Grade 11-12]",
-            "prodcode":" NHSOPT32",
-            "brand":" ACECRAFT",
-            "soldby":"Alchemy",
-            "discountedprice":"₹435",
-            "originalprice":" ₹655",
-            "discount":"34% OFF"
-        },
-        {
-            "id":25,
-            "image":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/627bd26c3f76019779ceeb39/webp/henley-polos-blue-480x480.jpg",
-            "title":"NHG Blue Tennis Polos [Jal, Grade 11-12]",
-            "prodcode":" NHSBPT32",
-            "brand":" ACECRAFT",
-            "soldby":"Alchemy",
-            "discountedprice":"₹435",
-            "originalprice":" ₹655",
-            "discount":"34% OFF"
-        },
-        {
-            "id":26,
-            "image":"https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/627bca77af909c3a7e820f27/webp/tennis-polos-purple-480x480.jpg",
-            "title":"NHG Purple Tennis Polos [Vayu, Grade 11-12]",
-            "prodcode":" NHSPPT32",
-            "brand":" ACECRAFT",
-            "soldby":"Alchemy",
-            "discountedprice":"₹435",
-            "originalprice":" ₹655",
-            "discount":"34% OFF"
-        }
-    
-
-
-    ]
+  "Notes": [
+    {
+      "id": 1,
+      "title": "STYLING ACCESSORIES THAT COMPLEMENT YOUR FORMAL WEAR"
+    },
+    {
+      "id": 2,
+      "title": "5 CLASSIC LOOKS FOR HER"
+    },
+    {
+      "id": 3,
+      "title": "ACING TOUR FORMAL ATTIRE"
+    },
+    {
+      "id": 4,
+      "title": "SELECTING AND STYLING YOUR WORKWEAR"
+    },
+    {
+      "id": 5,
+      "title": "LETS TALK 'BODY TYPES', WOMEN!"
+    },
+    {
+      "id": 6,
+      "title": "5 CLASSIC LOOKS FOR HIM"
+    },
+    {
+      "id": 7,
+      "title": "TIPS FOR A GREAT OUTFIT"
+    },
+    {
+      "id": 8,
+      "title": "DRESSING TO SUCCED:THE IMPORTANCE OF 'FORMALS' "
+    },
+    {
+      "id": 9,
+      "title": "WORKWEAR FOR ALL SEASONS:THE WOMEN EDIT"
+    },
+    {
+      "id": 10,
+      "title": "THE ACECRAFT DIFFERENCE"
+    },
+    {
+      "id": 11,
+      "title": "CORPORATE TO CUPCAKES!-STORY OF A SUPERWOMAN."
+    },
+    {
+      "id": 12,
+      "title": "HOW TO COMPLETE YOUR COLLEGE LOOK"
+    },
+    {
+      "id": 13,
+      "title": "DRESS THE RIGHT WAY TO IMPRESS THE RIGHT WAY"
+    }
+  ],
+  "mens": [
+    {
+      "id": 1,
+      "img": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/Enterprises-2.png",
+      "imgtxt1": "F(IT) MATTERS .",
+      "imgtxt2": "A size for every one"
+    },
+    {
+      "id": 2,
+      "img": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/Enterprises-3.png",
+      "imgtxt1": "PERSONALISED BRANDING",
+      "imgtxt2": "Your design.Our customization."
+    },
+    {
+      "id": 3,
+      "img": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/Enterprises-4.png",
+      "imgtxt1": "TEAM UP FOR TEAM WEAR",
+      "imgtxt2": "Bulk orders delivered seamlessly."
+    }
+  ],
+  "steps": [
+    {
+      "stepsid": 1,
+      "stepsimg": "http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/icon-1.png",
+      "stepscontent1": "Single line",
+      "stepscontent2": "brief"
+    },
+    {
+      "stepsid": 2,
+      "stepsimg": "http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/icon-2.png",
+      "stepscontent1": "Mind",
+      "stepscontent2": "mapping"
+    },
+    {
+      "stepsid": 3,
+      "stepsimg": "http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/icon-3.png",
+      "stepscontent1": "Design and",
+      "stepscontent2": "details"
+    },
+    {
+      "stepsid": 4,
+      "stepsimg": "http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/icon-4.png",
+      "stepscontent1": "Sampling",
+      "stepscontent2": ""
+    },
+    {
+      "stepsid": 5,
+      "stepsimg": "http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/icon-5.png",
+      "stepscontent1": "Manufacturing",
+      "stepscontent2": ""
+    },
+    {
+      "stepsid": 6,
+      "stepsimg": "http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/icon-6.png",
+      "stepscontent1": "Delivery",
+      "stepscontent2": ""
+    }
+  ],
+  "schools": [
+    {
+      "schoolid": 1,
+      "schoolname": "JGI",
+      "logo": "http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/jain.jpeg"
+    },
+    {
+      "schoolid": 2,
+      "schoolname": "RV",
+      "logo": "http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/rvschool.png"
+    },
+    {
+      "schoolid": 3,
+      "schoolname": "SOPHIA",
+      "logo": "http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/sophias.jpg"
+    },
+    {
+      "schoolid": 4,
+      "schoolname": "KUMARANS",
+      "logo": "http://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/kumarans.png"
+    },
+    {
+      "schoolid": 5,
+      "schoolname": "NEW HORIZON GURUKUL",
+      "logo": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/Logo-%20New%20Horizon%20Gurukul.jpg"
+    },
+    {
+      "schoolid": 6,
+      "schoolname": "CISB",
+      "logo": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/cgis.png"
+    },
+    {
+      "schoolid": 7,
+      "schoolname": "NHIS",
+      "logo": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/NHIS%20LOGO%20Jpeg.jpg"
+    }
+  ],
+  "Enterpriselast": [
+    {
+      "id": 1,
+      "img": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/Untitled-1.png"
+    },
+    {
+      "fourid": 2,
+      "img": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/Untitled-2.png"
+    }
+  ],
+  "honda": [
+    {
+      "id": 1,
+      "image": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/honda.png",
+      "text": "HONDA CAR'S DEALER MANPOWER UNIFORM"
+    }
+  ],
+  "dress": [
+    {
+      "id": 1,
+      "image": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/627bd600820ea897cb5a5cfc/webp/day-wear-polos-480x480.jpg",
+      "title": "NHIS Day Wear Polo [Boys & Girls, Nursery-Grade 5]",
+      "prodcode": " NHISDWT18",
+      "brand": " ACECRAFT",
+      "soldby": "Alchemy",
+      "discountedprice": "₹340",
+      "originalprice": " ₹450",
+      "discount": "24% OFF"
+    },
+    {
+      "id": 2,
+      "image": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d6e74cbfb666ae1145869/webp/elementary-school-480x480.jpg",
+      "title": "NHIS Day Wear Polo [Boys & Girls, Nursery-Grade 5]",
+      "prodcode": " CIEDPT20",
+      "brand": " ACECRAFT",
+      "soldby": "Alchemy",
+      "discountedprice": "₹450",
+      "originalprice": " ₹749",
+      "discount": "40% OFF"
+    },
+    {
+      "id": 3,
+      "image": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f798f04705ab2ca347bb/images/5aa0f798f04705ab2ca347bc/5aa0f79ff04705ab2ca347d7/webp/5aa0f79ff04705ab2ca347d7-480x480.jpg",
+      "title": "NHG Shirt [Girls, Grade 1-10]",
+      "prodcode": " NHGSHRT20",
+      "brand": " ACECRAFT",
+      "soldby": "Alchemy",
+      "discountedprice": "₹355",
+      "originalprice": " ₹535",
+      "discount": "34% OFF"
+    },
+    {
+      "id": 4,
+      "image": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d6ffdbb47db6b5e246674/webp/middle-school-480x480.jpg",
+      "title": "CIS Sky Day Wear (Grade 6-8)",
+      "prodcode": "  CIMDPT26",
+      "brand": " ACECRAFT",
+      "soldby": "Alchemy",
+      "discountedprice": "₹500",
+      "originalprice": " ₹825",
+      "discount": "39% OFF"
+    },
+    {
+      "id": 5,
+      "image": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f5c6f04705ab2ca345c6/images/5aa0f5c6f04705ab2ca345c7/5aa0f5d0f04705ab2ca345f9/webp/5aa0f5d0f04705ab2ca345f9-480x480.jpg",
+      "title": "NHG Shirt [Boys, Grade 1-10]",
+      "prodcode": "  NHBSHRT22",
+      "brand": " ACECRAFT",
+      "soldby": "Alchemy",
+      "discountedprice": "₹355",
+      "originalprice": " ₹535",
+      "discount": "34% OFF"
+    },
+    {
+      "id": 6,
+      "image": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/627b614a77743f91a456432d/webp/front-view-nhg-shirt-girls-grade-11-12--480x480.jpg",
+      "title": "NHG County Shirt [Girls, Grade 11-12]",
+      "prodcode": "  NHSGSHXXS",
+      "brand": " ACECRAFT",
+      "soldby": "Alchemy",
+      "discountedprice": "₹550",
+      "originalprice": " ₹750",
+      "discount": "27% OFF"
+    },
+    {
+      "id": 7,
+      "image": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d7044a72cc46b41ac7ca4/webp/hi-school-480x480.jpg",
+      "title": "CIS White Day Wear (Grade 9 & 10)",
+      "prodcode": " CIHDPT28",
+      "brand": " ACECRAFT",
+      "soldby": "Alchemy",
+      "discountedprice": "₹500",
+      "originalprice": " ₹825",
+      "discount": "39% OFF"
+    },
+    {
+      "id": 8,
+      "image": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/627b614b1b723d40d4a3954a/webp/front-view-nhg-shirt-boys-grade-11-12--480x480.jpg",
+      "title": "NHG County Shirt [Boys, Grade 11-12]",
+      "prodcode": "NHSGSHXXS",
+      "brand": " ACECRAFT",
+      "soldby": "Alchemy",
+      "discountedprice": "₹550",
+      "originalprice": " ₹750",
+      "discount": "27% OFF"
+    },
+    {
+      "id": 9,
+      "image": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f5c6f04705ab2ca345c6/images/5aa0f5c6f04705ab2ca345c7/5aa0f5d0f04705ab2ca345f9/webp/5aa0f5d0f04705ab2ca345f9-480x480.jpg",
+      "title": "NHG Shirt [Boys, Grade 1-10]",
+      "prodcode": "NHBSHRT22",
+      "brand": " ACECRAFT",
+      "soldby": "Alchemy",
+      "discountedprice": "₹355",
+      "originalprice": " ₹535",
+      "discount": "34% OFF"
+    },
+    {
+      "id": 10,
+      "image": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d708bcbfb666ae1149973/webp/cisb-shorts-480x480.jpg",
+      "title": "CIS Day Wear Shorts",
+      "prodcode": "  CIDCSH1220",
+      "brand": " ACECRAFT",
+      "soldby": "Alchemy",
+      "discountedprice": "₹475",
+      "originalprice": " ₹793",
+      "discount": "40% OFF"
+    },
+    {
+      "id": 11,
+      "image": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f01491c2e5ab32f33869/images/5aa0f01491c2e5ab32f3386a/5aa0f01e91c2e5ab32f338a4/webp/5aa0f01e91c2e5ab32f338a4-480x480.jpg",
+      "title": "NHG Jumpers [Girls, Grade 1-4]",
+      "prodcode": "NHJMP2222",
+      "brand": " ACECRAFT",
+      "soldby": "Alchemy",
+      "discountedprice": "₹605",
+      "originalprice": " ₹910",
+      "discount": "34% OFF"
+    },
+    {
+      "id": 12,
+      "image": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d70c2cbfb666ae114a053/webp/yellow-house-t-shirt-480x480.jpg",
+      "title": "CIS House T-Shirt (Yellow)",
+      "prodcode": " CISTSY18",
+      "brand": " ACECRAFT",
+      "soldby": "Alchemy",
+      "discountedprice": "₹450",
+      "originalprice": " ₹749",
+      "discount": "40% OFF"
+    },
+    {
+      "id": 13,
+      "image": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601ba70c7779a13e481409f5/webp/t4-1-480x480.png",
+      "title": "CIS House T-Shirt (Red)",
+      "prodcode": "CISTSR18",
+      "brand": " ACECRAFT",
+      "soldby": "Alchemy",
+      "discountedprice": "₹450",
+      "originalprice": " ₹745",
+      "discount": "40% OFF"
+    },
+    {
+      "id": 14,
+      "image": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f01491c2e5ab32f3383d/images/5aa0f01491c2e5ab32f3383e/5aa0f01f91c2e5ab32f338a7/webp/5aa0f01f91c2e5ab32f338a7-480x480.jpg",
+      "title": "NH Skirt [Girls]",
+      "prodcode": " NHSKT0818",
+      "brand": " ACECRAFT",
+      "soldby": "Alchemy",
+      "discountedprice": "₹545",
+      "originalprice": " ₹865",
+      "discount": "37% OFF"
+    },
+    {
+      "id": 15,
+      "image": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/627bd26c3f76019779ceeb39/webp/henley-polos-blue-480x480.jpg",
+      "title": "NHIS Blue Henley Polo [Boys & Girls, Chalukya, Nursery-Grad",
+      "prodcode": "  NHISBT18",
+      "brand": " ACECRAFT",
+      "soldby": "Alchemy",
+      "discountedprice": "₹340",
+      "originalprice": " ₹450",
+      "discount": "24% OFF"
+    },
+    {
+      "id": 16,
+      "image": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d7104bb47db6b5e248fc5/webp/cisb-zipper-480x480.jpg",
+      "title": " CIS Zippers (Grade 1-12)",
+      "prodcode": " NHGSHRT20",
+      "brand": " ACECRAFT",
+      "soldby": "Alchemy",
+      "discountedprice": "₹800",
+      "originalprice": " ₹1325",
+      "discount": "40% OFF"
+    },
+    {
+      "id": 17,
+      "image": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/627bd8ca3f76019779cffc21/webp/sports-shorts-480x480.jpg",
+      "title": "NHIS Sports Shorts [Boys & Girls, Nursery-Grade 5]",
+      "prodcode": "  NHISSS20",
+      "brand": " ACECRAFT",
+      "soldby": "Alchemy",
+      "discountedprice": "₹495",
+      "originalprice": " ₹650",
+      "discount": "24% OFF"
+    },
+    {
+      "id": 18,
+      "image": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f01491c2e5ab32f33874/images/5aa0f01491c2e5ab32f33875/5aa0f02091c2e5ab32f338b4/webp/5aa0f02091c2e5ab32f338b4-480x480.jpg",
+      "title": "NHG Blue House Tshirt [Jal, Grade 1-10]",
+      "prodcode": "  NHBTS20",
+      "brand": " ACECRAFT",
+      "soldby": "Alchemy",
+      "discountedprice": "₹345",
+      "originalprice": " ₹520",
+      "discount": "34% OFF"
+    },
+    {
+      "id": 19,
+      "image": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f02c91c2e5ab32f338e0/images/5aa0f02c91c2e5ab32f338e1/5aa0f03591c2e5ab32f33940/webp/5aa0f03591c2e5ab32f33940-480x480.jpg",
+      "title": "NHG Cargo [Boys & Girls, Grade 1-12]",
+      "prodcode": " NHCRG4442",
+      "brand": " ACECRAFT",
+      "soldby": "Alchemy",
+      "discountedprice": "₹999",
+      "originalprice": " ₹1500",
+      "discount": "33% OFF"
+    },
+    {
+      "id": 20,
+      "image": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/627bdcee87bafb10152cb29b/webp/tennis-joggers-480x480.jpg",
+      "title": "NH Tennis Joggers [Boys & Girls, Nursery-Grade 12]",
+      "prodcode": " NHSJG36",
+      "brand": " ACECRAFT",
+      "soldby": "Alchemy",
+      "discountedprice": "₹800",
+      "originalprice": " ₹1149",
+      "discount": "30% OFF"
+    },
+    {
+      "id": 21,
+      "image": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f5c6f04705ab2ca345da/images/5aa0f5c6f04705ab2ca345db/5aa0f5d3f04705ab2ca345fe/webp/5aa0f5d3f04705ab2ca345fe-480x480.jpg",
+      "title": "NHG Neck Tie [Girls, Grade 5-12]",
+      "prodcode": "NHNKTIFR",
+      "brand": " ACECRAFT",
+      "soldby": "Alchemy",
+      "discountedprice": "₹175",
+      "originalprice": " ₹265",
+      "discount": "34% OFF"
+    },
+    {
+      "id": 22,
+      "image": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f798f04705ab2ca347c5/images/5aa0f798f04705ab2ca347c6/5aa0f7a1f04705ab2ca347dc/webp/5aa0f7a1f04705ab2ca347dc-480x480.png",
+      "title": "NHG Belt [Boys, Grade 5-12]",
+      "prodcode": " NHBLT_FREE",
+      "brand": " ACECRAFT",
+      "soldby": "Alchemy",
+      "discountedprice": "₹300",
+      "originalprice": " ₹450",
+      "discount": "33% OFF"
+    },
+    {
+      "id": 23,
+      "image": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.products/5aa0f02c91c2e5ab32f33922/images/5aa0f02c91c2e5ab32f33923/5aa0f03591c2e5ab32f33937/webp/5aa0f03591c2e5ab32f33937-480x480.jpg",
+      "title": "NH Socks [Boys & Girls, Nursery-Grade 12]",
+      "prodcode": " NHSOK2",
+      "brand": " ACECRAFT",
+      "soldby": "Alchemy",
+      "discountedprice": "₹110",
+      "originalprice": " ₹165",
+      "discount": "33% OFF"
+    },
+    {
+      "id": 24,
+      "image": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/627bc93b21bae49614958b4a/webp/tennis-polos-orange-480x480.jpg",
+      "title": "NHG Orange Tennis Polos [Agni, Grade 11-12]",
+      "prodcode": " NHSOPT32",
+      "brand": " ACECRAFT",
+      "soldby": "Alchemy",
+      "discountedprice": "₹435",
+      "originalprice": " ₹655",
+      "discount": "34% OFF"
+    },
+    {
+      "id": 25,
+      "image": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/627bd26c3f76019779ceeb39/webp/henley-polos-blue-480x480.jpg",
+      "title": "NHG Blue Tennis Polos [Jal, Grade 11-12]",
+      "prodcode": " NHSBPT32",
+      "brand": " ACECRAFT",
+      "soldby": "Alchemy",
+      "discountedprice": "₹435",
+      "originalprice": " ₹655",
+      "discount": "34% OFF"
+    },
+    {
+      "id": 26,
+      "image": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/627bca77af909c3a7e820f27/webp/tennis-polos-purple-480x480.jpg",
+      "title": "NHG Purple Tennis Polos [Vayu, Grade 11-12]",
+      "prodcode": " NHSPPT32",
+      "brand": " ACECRAFT",
+      "soldby": "Alchemy",
+      "discountedprice": "₹435",
+      "originalprice": " ₹655",
+      "discount": "34% OFF"
+    }
+  ],
+  "NewUser": [
+    {
+      "id": 1687954830183,
+      "firstName": "karthikeyan",
+      "lastName": "R",
+      "email": "mikarthipsg@gmail.com",
+      "password": "Karthi@2108",
+      "userType": "school",
+      "dealershipName": "craft",
+      "dealershipCode": "123456",
+      "city": "Coimbatore",
+      "state": "Andhra Pradesh",
+      "gstNumber": "12345"
+    }
+  ]
 }

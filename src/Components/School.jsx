@@ -232,9 +232,9 @@ export const Uniforms = () => {
         <h2 id='imgt'>Decode</h2>
         <h2 id='imgt1'>Your kind of designer uniforms.</h2>
       </div>
-      <div className='ms-5 mt-4'>
+      <div className='ms-5 mt-4 '>
 
-        <select id="sortOrder" value={sortOption} onChange={handleSortChange}>
+        <select  id="sortOrder" value={sortOption} onChange={handleSortChange}>
           <option value="/">Sort</option>
           <option value="ascending">Ascending</option>
           <option value="descending">Descending</option>
@@ -291,10 +291,49 @@ export const Uniformdisplay = () => {
     setSelectedSize(event.target.value);
   };
 
+  const Updatedcost = () => {
+     const newprice = parseFloat(scluniform.discountedprice.replace(/₹|,/g, ''));  
+     
+    if (!selectedSize) {
+      return newprice.toString();
+    }
+
+
+    if (selectedSize === '20') {
+      return (newprice + 20).toString();
+    } else if (selectedSize === '22') {
+      return (newprice + 40).toString();
+    } else if (selectedSize === '24'){
+      return (newprice + 60).toString();
+    }
+    else if (selectedSize === '26'){
+      return (newprice + 80).toString();
+    }
+    else if (selectedSize === '28'){
+      return (newprice + 100).toString();
+    }
+    else if (selectedSize === '30'){
+      return (newprice + 120).toString();
+    }
+    else if (selectedSize === '32'){
+      return (newprice + 140).toString();
+    }
+    else if (selectedSize === '34'){
+      return (newprice + 160).toString();
+    }
+
+    return newprice.toString();
+  };
+
+
+
+
+
+
   const handleQuantityChange = (event) => {
     setSelectedQuantity(event.target.value);
   };
-  
+
 
   return (
     <div className='container-fluid ms-5' style={{ paddingBottom: '160px' }}>
@@ -338,7 +377,7 @@ export const Uniformdisplay = () => {
                 fontWeight: '450',
               }}
             >
-              {scluniform.discountedprice}
+              ₹{Updatedcost()}
             </h5>
 
             <h6
@@ -352,12 +391,11 @@ export const Uniformdisplay = () => {
               <del>{scluniform.originalprice}</del>
             </h6>
           </div>
-       
+
           <div>
             <h5
               className='text-center justify-content-center pt-1 mt-3 ms-4'
               style={{
-                color: 'black',
                 fontSize: '16px',
                 backgroundColor: 'black',
                 color: 'white',
@@ -377,7 +415,6 @@ export const Uniformdisplay = () => {
               data-bs-toggle='modal'
               data-bs-target='#exampleModal'
               style={{
-                color: 'black',
                 fontSize: '14px',
                 backgroundColor: 'black',
                 color: 'white',
@@ -459,9 +496,26 @@ export const Uniformdisplay = () => {
               </div>
             </div>
           </div>
+
+
+
+        </div>
+      </div>
+      {/* description */}
+      <div className='description'>
+        <div style={{ background: '#f5f5f5', padding: '10px' }}>
+          <h6 >Description of product</h6>
+        </div>
+        <div style={{color:'black',paddingTop:'19px',paddingBottom:'2em'}}>
+        <h6 >NO RETURNS & NO EXCHANGE.</h6>
+        <h6 style={{ fontWeight: 200, fontSize: 13 }}>Made from Poly-cotton. Henley neckline. Short sleeves.</h6>
+        </div>
+        <div style={{ background: '#f5f5f5', padding: '10px ' }}>
+          <h6 >Related products</h6>
         </div>
       </div>
     </div>
+
   );
 };
 
