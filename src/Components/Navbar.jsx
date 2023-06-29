@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCog, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import '../Styles/Navbar.css';
-import HoverList from 'D:/acecraft/src/Components/HoverList.jsx';
+import HoverList from '../Components/HoverList';
 import { useCart } from "react-use-cart";
 
 function Navbar() {

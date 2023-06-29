@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 import '../Styles/Uniform.css'
 import sizeguide from '../assests/sizess.png'
 import { CartProvider, useCart } from 'react-use-cart';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -348,6 +350,10 @@ export const Uniformdisplay = () => {
     };
     addItem(item);
     console.log('Item added to cart:', item);
+
+    toast.success('Item added to cart', {
+      position: toast.POSITION.BOTTOM_RIGHT
+    });
 };
 
   return (
@@ -441,7 +447,7 @@ export const Uniformdisplay = () => {
 
           {/* Dropdown for selecting size */}
           <div className='mt-4 d-flex'>
-            <label htmlFor='selectSize' className='form-label' style={{ color: 'white', backgroundColor: 'black' }}>
+            <label htmlFor='selectSize' className='form-label py-2' style={{ color: 'white', backgroundColor: 'black' }}>
               Select Size
             </label>
             <select
@@ -484,10 +490,12 @@ export const Uniformdisplay = () => {
             ADD TO CART
           </button>
           </CartProvider>
+          
           <button style={{ backgroundColor: 'black' }} type='button' className='btn btn-dark mt-5 ms-5'>
             Buy Now
           </button>
-
+          
+      <ToastContainer />
           {/* modal for size chart */}
           <div className='modal fade' id='exampleModal' tabindex='' aria-labelledby='exampleModalLabel' aria-hidden='true'>
             <div className='modal-dialog'>
