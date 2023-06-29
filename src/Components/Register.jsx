@@ -90,10 +90,12 @@ const Register = () => {
       validationErrors.gstNumber = " Only can contain numbers";
     }
 
+     
+    
     if (Object.keys(validationErrors).length === 0) {
       // Form data is valid
       const newUser = {
-        id: Date.now(), 
+        id: Date.now(),
         firstName,
         lastName,
         email,
@@ -105,6 +107,7 @@ const Register = () => {
         state,
         gstNumber,
       };
+      
 
       // Send the user data to the server
       fetch("http://localhost:4000/NewUser", {
@@ -131,17 +134,10 @@ const Register = () => {
             setState("");
             setGstNumber("");
             console.log("Registration Successful");
-          } else {
-            // Registration failed
-            // You can handle the error based on the response status and show appropriate feedback to the user
-            throw new Error("Registration failed");
           }
         })
-        .catch((error) => {
-          // Handle any network or server errors
-          console.error("Error:", error);
-        });
-    } else {
+    }
+    else {
       setErrors(validationErrors);
     }
   };
@@ -186,9 +182,8 @@ const Register = () => {
               <input
                 type="text"
                 id="firstName"
-                className={`form-control ${
-                  errors.firstName ? "is-invalid" : ""
-                }`}
+                className={`form-control ${errors.firstName ? "is-invalid" : ""
+                  }`}
                 placeholder="Enter your first name"
                 value={firstName}
                 onChange={(e) => setFirstName(e.target.value)}
@@ -202,9 +197,8 @@ const Register = () => {
               <input
                 type="text"
                 id="lastName"
-                className={`form-control ${
-                  errors.lastName ? "is-invalid" : ""
-                }`}
+                className={`form-control ${errors.lastName ? "is-invalid" : ""
+                  }`}
                 placeholder="Enter your last name"
                 value={lastName}
                 onChange={(e) => setLastName(e.target.value)}
@@ -232,9 +226,8 @@ const Register = () => {
               <input
                 type="password"
                 id="password"
-                className={`form-control ${
-                  errors.password ? "is-invalid" : ""
-                }`}
+                className={`form-control ${errors.password ? "is-invalid" : ""
+                  }`}
                 placeholder="Enter your password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
@@ -248,9 +241,8 @@ const Register = () => {
               <input
                 type="password"
                 id="confirmPassword"
-                className={`form-control ${
-                  errors.confirmPassword ? "is-invalid" : ""
-                }`}
+                className={`form-control ${errors.confirmPassword ? "is-invalid" : ""
+                  }`}
                 placeholder="Confirm your password"
                 value={confirmPassword}
                 onChange={(e) => setConfirmPassword(e.target.value)}
@@ -288,9 +280,8 @@ const Register = () => {
               <input
                 type="text"
                 id="dealershipName"
-                className={`form-control ${
-                  errors.dealershipName ? "is-invalid" : ""
-                }`}
+                className={`form-control ${errors.dealershipName ? "is-invalid" : ""
+                  }`}
                 placeholder="Enter your dealership name"
                 value={dealershipName}
                 onChange={(e) => setDealershipName(e.target.value)}
@@ -304,9 +295,8 @@ const Register = () => {
               <input
                 type="text"
                 id="dealershipCode"
-                className={`form-control ${
-                  errors.dealershipCode ? "is-invalid" : ""
-                }`}
+                className={`form-control ${errors.dealershipCode ? "is-invalid" : ""
+                  }`}
                 placeholder="Enter your dealership number or code"
                 value={dealershipCode}
                 onChange={(e) => setDealershipCode(e.target.value)}
@@ -376,9 +366,8 @@ const Register = () => {
               <input
                 type="text"
                 id="gstNumber"
-                className={`form-control ${
-                  errors.gstNumber ? "is-invalid" : ""
-                }`}
+                className={`form-control ${errors.gstNumber ? "is-invalid" : ""
+                  }`}
                 placeholder="Enter your GST number"
                 value={gstNumber}
                 onChange={(e) => setGstNumber(e.target.value)}

@@ -492,6 +492,58 @@
       "city": "chennai",
       "state": "Arunachal Pradesh",
       "gstNumber": "3444444"
+    },
+    {
+      "id": 1688013038822,
+      "firstName": "Balaji",
+      "lastName": "k",
+      "email": "bala@gmail.com",
+      "password": "Bala@123",
+      "userType": "enterprise",
+      "dealershipName": "union",
+      "dealershipCode": "8090890",
+      "city": "bangalore",
+      "state": "Karnataka",
+      "gstNumber": "5654646"
+    },
+    {
+      "id": 1688013507163,
+      "firstName": "sanjay",
+      "lastName": "R",
+      "email": "sanjay@gmail.com",
+      "password": "Sanjay@123",
+      "userType": "school",
+      "dealershipName": "club",
+      "dealershipCode": "676755",
+      "city": "Tiruppur",
+      "state": "Tamil Nadu",
+      "gstNumber": "12335423"
+    },
+    {
+      "id": "VFIFSmXJTjLtxudHl7O9A",
+      "firstName": "Hari",
+      "lastName": "karthick",
+      "email": "hari@gmail.com",
+      "password": "Hari@123",
+      "userType": "school",
+      "dealershipName": "Lcu",
+      "dealershipCode": "7675767",
+      "city": "ooty",
+      "state": "Tamil Nadu",
+      "gstNumber": "977879"
+    },
+    {
+      "id": 1688036257928,
+      "firstName": "Hemanth",
+      "lastName": "B",
+      "email": "hemanth@gmail.com",
+      "password": "Hemanth@123",
+      "userType": "enterprise",
+      "dealershipName": "Gym",
+      "dealershipCode": "75675",
+      "city": "Thudiyalur",
+      "state": "Manipur",
+      "gstNumber": "5654646"
     }
   ]
 }

@@ -1,23 +1,29 @@
-import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCog, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import '../Styles/Navbar.css';
+import HoverList from 'D:/acecraft/src/Components/HoverList.jsx';
+import { useCart } from "react-use-cart";
 
 function Navbar() {
-  const [showList, setShowList] = useState(false);
+  const {
+    totalUniqueItems
+  } = useCart();
+  
+  const [isHovering, setIsHovering] = useState(false);
 
-  const handleSettingsIconHover = () => {
-    setShowList(true);
-  };
+  const handleMouseOver = () => {
+    setIsHovering(!isHovering);
+  }
+  // const handleMouseOut = () => {
+  //   setIsHovering(false);
+  // }
 
-  const handleSettingsIconLeave = () => {
-    setShowList(false);
-  };
 
   return (
     <div className='navbarfull fixed-top'>
-      <Link className='titlename' to='/'>
+      <Link className='titlename' to='/acecraft'>
         acecraft
       </Link>
       <nav className='navbar-expand-lg'>
@@ -53,42 +59,31 @@ function Navbar() {
               </Link>
             </div>
 
-            <div
-              className='ml-5 d-flex align-items-center ms-5 mt-n3'
-              onMouseEnter={handleSettingsIconHover}
-              onMouseLeave={handleSettingsIconLeave}
-            >
-              <div className='ml-4'>
-                <Link className='nav-link '>
-                  <FontAwesomeIcon icon={faCog} size='2x' />
-                  {showList && (
-                    <ul className='list'>
-                      <li>
-                        <Link to='/signin'>Sign In</Link>
-                      </li>
-                      <li>
-                        <Link to='/signup'>Register</Link>
-                      </li>
-                      <li>
-                        <Link to='/signup'>Order Status</Link>
-                      </li>
-                      <li>
-                        <Link to='/signup'>Contact</Link>
-                      </li>
-                    </ul>
-                  )}
-                </Link>
-              </div>
-              <div>
-                <Link className='nav-link ps-5'>
-                  <FontAwesomeIcon icon={faShoppingCart} size='2x' />
-                </Link>
-              </div>
-            </div>
+            
           </div>
         </div>
       </nav>
+      <div
+              className=' setting'
+             
+            >
+              <div className='ml-4'>
+                <Link className='nav-link '>
+                  <FontAwesomeIcon  onClick={handleMouseOver} icon={faCog} size='2x' />
+                  
+                </Link>
+                
+              </div>
+              <div>
+                <Link className='nav-link shoppingCart' to='/cart'>
+                  <FontAwesomeIcon icon={faShoppingCart} size='2x' /><span class="badge">{totalUniqueItems}</span>
+                </Link>
+              </div>
+            </div>
+            {isHovering && (
+        <div className='justify-content-end d-flex settings'><HoverList /></div>)}
     </div>
+    
   );
 }
 

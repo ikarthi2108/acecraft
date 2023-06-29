@@ -1,10 +1,15 @@
 import React, { useState } from "react";
 import "../Styles/Signin.css";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
 
 const SignIn = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+
+  const navigate=useNavigate();
+
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -20,6 +25,8 @@ const SignIn = () => {
         if (foundUser) {
           // Login successful
           console.log("Login success");
+          navigate("/acecraft");
+
         } else {
           // Login failed
           console.log("Login failed");

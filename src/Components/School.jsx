@@ -4,6 +4,7 @@ import '../Styles/school.css'
 import { Link } from 'react-router-dom';
 import '../Styles/Uniform.css'
 import sizeguide from '../assests/sizess.png'
+import { CartProvider, useCart } from 'react-use-cart';
 
 
 
@@ -235,7 +236,7 @@ export const Uniforms = () => {
       </div>
       <div className='ms-5 mt-4 '>
 
-        <select  id="sortOrder" value={sortOption} onChange={handleSortChange}>
+        <select id="sortOrder" value={sortOption} onChange={handleSortChange}>
           <option value="/">Sort</option>
           <option value="ascending">Ascending</option>
           <option value="descending">Descending</option>
@@ -273,6 +274,7 @@ export const Uniformdisplay = () => {
   const [scluniform, setscluniform] = useState(null);
   const [selectedSize, setSelectedSize] = useState('');
   const [selectedQuantity, setSelectedQuantity] = useState('');
+  const { addItem } = useCart();
 
   useEffect(() => {
     fetch(`http://localhost:4000/dress/${id}`)
@@ -293,8 +295,8 @@ export const Uniformdisplay = () => {
   };
 
   const Updatedcost = () => {
-     const newprice = parseFloat(scluniform.discountedprice.replace(/₹|,/g, ''));  
-     
+    const newprice = parseFloat(scluniform.discountedprice.replace(/₹|,/g, ''));
+
     if (!selectedSize) {
       return newprice.toString();
     }
@@ -304,22 +306,22 @@ export const Uniformdisplay = () => {
       return (newprice + 20).toString();
     } else if (selectedSize === '22') {
       return (newprice + 40).toString();
-    } else if (selectedSize === '24'){
+    } else if (selectedSize === '24') {
       return (newprice + 60).toString();
     }
-    else if (selectedSize === '26'){
+    else if (selectedSize === '26') {
       return (newprice + 80).toString();
     }
-    else if (selectedSize === '28'){
+    else if (selectedSize === '28') {
       return (newprice + 100).toString();
     }
-    else if (selectedSize === '30'){
+    else if (selectedSize === '30') {
       return (newprice + 120).toString();
     }
-    else if (selectedSize === '32'){
+    else if (selectedSize === '32') {
       return (newprice + 140).toString();
     }
-    else if (selectedSize === '34'){
+    else if (selectedSize === '34') {
       return (newprice + 160).toString();
     }
 
@@ -335,6 +337,18 @@ export const Uniformdisplay = () => {
     setSelectedQuantity(event.target.value);
   };
 
+  const handleAddToCart = () => {
+    const item = {
+      image: scluniform.image,
+      id: scluniform.id,
+      title: scluniform.title,
+      price: Updatedcost(),
+      quantity: selectedQuantity
+     
+    };
+    addItem(item);
+    console.log('Item added to cart:', item);
+};
 
   return (
     <div className='container-fluid ms-5' style={{ paddingBottom: '160px' }}>
@@ -465,9 +479,11 @@ export const Uniformdisplay = () => {
           </div>
 
 
-          <button style={{ backgroundColor: 'black' }} type='button' className='btn btn-dark mt-5'>
+         <CartProvider>
+          <button onClick={handleAddToCart} style={{ backgroundColor: 'black' }} type='button' className='btn btn-dark mt-5'>
             ADD TO CART
           </button>
+          </CartProvider>
           <button style={{ backgroundColor: 'black' }} type='button' className='btn btn-dark mt-5 ms-5'>
             Buy Now
           </button>
@@ -507,14 +523,14 @@ export const Uniformdisplay = () => {
         <div style={{ background: '#f5f5f5', padding: '10px' }}>
           <h6 >Description of product</h6>
         </div>
-        <div style={{color:'black',paddingTop:'19px',paddingBottom:'2em'}}>
-        <h6 >NO RETURNS & NO EXCHANGE.</h6>
-        <h6 style={{ fontWeight: 200, fontSize: 13 }}>Made from Poly-cotton. Henley neckline. Short sleeves.</h6>
+        <div style={{ color: 'black', paddingTop: '19px', paddingBottom: '2em' }}>
+          <h6 >NO RETURNS & NO EXCHANGE.</h6>
+          <h6 style={{ fontWeight: 200, fontSize: 13 }}>Made from Poly-cotton. Henley neckline. Short sleeves.</h6>
         </div>
         <div style={{ background: '#f5f5f5', padding: '10px ' }}>
           <h6 >Related products</h6>
         </div>
-        
+
       </div>
     </div>
 
