@@ -544,6 +544,28 @@
       "city": "Thudiyalur",
       "state": "Manipur",
       "gstNumber": "5654646"
+    },
+    {
+      "id": 1688099372119,
+      "firstName": "vishal",
+      "lastName": "sj",
+      "email": "vishal@gmail.com",
+      "password": "Vishal@123",
+      "userType": "school",
+      "dealershipName": "dealer",
+      "dealershipCode": "767765",
+      "city": "haryana",
+      "state": "Haryana",
+      "gstNumber": "56565"
+    }
+  ],
+  "Cartitems": [
+    {
+      "image": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d7104bb47db6b5e248fc5/webp/cisb-zipper-480x480.jpg",
+      "id": 16,
+      "title": " CIS Zippers (Grade 1-12)",
+      "price": "800",
+      "quantity": "1"
     }
   ]
 }

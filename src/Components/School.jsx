@@ -275,7 +275,7 @@ export const Uniformdisplay = () => {
   const navigate = useNavigate();
   const [scluniform, setscluniform] = useState(null);
   const [selectedSize, setSelectedSize] = useState('');
-  const [selectedQuantity, setSelectedQuantity] = useState('');
+  const [selectedQuantity, setSelectedQuantity] = useState('1');
   const { addItem } = useCart();
 
   useEffect(() => {
@@ -303,37 +303,26 @@ export const Uniformdisplay = () => {
       return newprice.toString();
     }
 
-
     if (selectedSize === '20') {
       return (newprice + 20).toString();
     } else if (selectedSize === '22') {
       return (newprice + 40).toString();
     } else if (selectedSize === '24') {
       return (newprice + 60).toString();
-    }
-    else if (selectedSize === '26') {
+    } else if (selectedSize === '26') {
       return (newprice + 80).toString();
-    }
-    else if (selectedSize === '28') {
+    } else if (selectedSize === '28') {
       return (newprice + 100).toString();
-    }
-    else if (selectedSize === '30') {
+    } else if (selectedSize === '30') {
       return (newprice + 120).toString();
-    }
-    else if (selectedSize === '32') {
+    } else if (selectedSize === '32') {
       return (newprice + 140).toString();
-    }
-    else if (selectedSize === '34') {
+    } else if (selectedSize === '34') {
       return (newprice + 160).toString();
     }
 
     return newprice.toString();
   };
-
-
-
-
-
 
   const handleQuantityChange = (event) => {
     setSelectedQuantity(event.target.value);
@@ -346,18 +335,37 @@ export const Uniformdisplay = () => {
       title: scluniform.title,
       price: Updatedcost(),
       quantity: selectedQuantity
-     
     };
+
     addItem(item);
     console.log('Item added to cart:', item);
+    console.log(item.quantity);
 
-    toast.success('Item added to cart', {
-      position: toast.POSITION.BOTTOM_RIGHT
-    });
-};
+    // POST item to Cartitems endpoint
+    fetch('http://localhost:4000/Cartitems', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(item)
+    })
+      .then((response) => response.json())
+      .then(() => {
+        toast.success('Item added to cart', {
+          position: toast.POSITION.BOTTOM_RIGHT
+        });
+      })
+      .catch((error) => {
+        console.error('Error adding item to cart:', error);
+        toast.error('Failed to add item to cart', {
+          position: toast.POSITION.BOTTOM_RIGHT
+        });
+      });
+  };
 
   return (
     <div className='container-fluid ms-5' style={{ paddingBottom: '160px' }}>
+      <div className='container-fluid ms-5' style={{ paddingBottom: '160px' }}>
       <div className='row mt-5 ms-5'>
         <div className='col-5 mt-5'>
           <img
@@ -541,9 +549,6 @@ export const Uniformdisplay = () => {
 
       </div>
     </div>
-
+    </div>
   );
 };
-
-
-

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../Styles/Register.css";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Register = () => {
   const [firstName, setFirstName] = useState("");
@@ -16,13 +17,14 @@ const Register = () => {
   const [gstNumber, setGstNumber] = useState("");
   const [errors, setErrors] = useState({});
 
+  const navigate = useNavigate();
+
   const handleRegister = (e) => {
     e.preventDefault();
 
     // Reset errors
     setErrors({});
 
-    // Perform validation
     const validationErrors = {};
 
     if (firstName.trim() === "") {
@@ -93,7 +95,6 @@ const Register = () => {
      
     
     if (Object.keys(validationErrors).length === 0) {
-      // Form data is valid
       const newUser = {
         id: Date.now(),
         firstName,
@@ -109,7 +110,7 @@ const Register = () => {
       };
       
 
-      // Send the user data to the server
+   
       fetch("http://localhost:4000/NewUser", {
         method: "POST",
         headers: {
@@ -133,6 +134,9 @@ const Register = () => {
             setCity("");
             setState("");
             setGstNumber("");
+
+            navigate("/signin");
+
             console.log("Registration Successful");
           }
         })
@@ -380,6 +384,7 @@ const Register = () => {
             <button className="bg-black text-white" type="submit">
               Register
             </button>
+            
             <p className="mt-3 text-center">
               Already have an account?{" "}
               <Link to="/signin" className="text-black w-25">
