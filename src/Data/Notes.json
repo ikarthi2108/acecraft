@@ -561,11 +561,18 @@
   ],
   "Cartitems": [
     {
-      "image": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d7104bb47db6b5e248fc5/webp/cisb-zipper-480x480.jpg",
-      "id": 16,
-      "title": " CIS Zippers (Grade 1-12)",
-      "price": "800",
+      "image": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/627b614b1b723d40d4a3954a/webp/front-view-nhg-shirt-boys-grade-11-12--480x480.jpg",
+      "id": 8,
+      "title": "NHG County Shirt [Boys, Grade 11-12]",
+      "price": "550",
       "quantity": "1"
+    },
+    {
+      "image": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d6ffdbb47db6b5e246674/webp/middle-school-480x480.jpg",
+      "id": 4,
+      "title": "CIS Sky Day Wear (Grade 6-8)",
+      "price": "500",
+      "quantity": "8"
     }
   ]
 }
