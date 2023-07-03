@@ -7,6 +7,7 @@ import sizeguide from "../assests/sizess.png";
 import { CartProvider, useCart } from "react-use-cart";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Carousel from 'react-bootstrap/Carousel';
 
 export default function School() {
   return (
@@ -430,6 +431,7 @@ export const Uniformdisplay = () => {
       title: scluniform.title,
       price: Updatedcost(),
       quantity: selectedQuantity,
+      size:selectedSize
     };
 
     addItem(item);
@@ -690,8 +692,61 @@ export const Uniformdisplay = () => {
           </div>
           <div style={{ background: "#f5f5f5", padding: "10px " }}>
             <h6>Related products</h6>
+
           </div>
+          <Carousel>
+            <Carousel.Item>
+              <div className="d-flex justify-content-between">
+                <img
+                  className="d-block w-25"
+                  src="https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d7044a72cc46b41ac7ca4/webp/hi-school-480x480.jpg"
+                  alt="1st Product"
+                />
+                <img
+                  className="d-block w-25"
+                  src="https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/627b614b1b723d40d4a3954a/webp/front-view-nhg-shirt-boys-grade-11-12--480x480.jpg"
+                  alt="2nd Product"
+                />
+                <img
+                  className="d-block w-25"
+                  src="https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d706374c88c6b06d39dc1/webp/h-school-480x480.jpg"
+                  alt="3rd Product"
+                />
+                <img
+                  className="d-block w-25"
+                  src="https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/627bd26c3f76019779ceeb39/webp/henley-polos-blue-480x480.jpg"
+                  alt="4th Product"
+                />
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div className="d-flex justify-content-between">
+                <img
+                  className="d-block w-25"
+                  src="https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601ba78c752f902f88d0e6de/webp/t3-1-480x480.png"
+                  alt="5th Product"
+                />
+                <img
+                  className="d-block w-25"
+                  src="https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601aba7db45549b7460788f0/webp/t1-1-480x480.png"
+                  alt="6th Product"
+                />
+                <img
+                  className="d-block w-25"
+                  src="https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601ba70c7779a13e481409f5/webp/t4-1-480x480.png"
+                  alt="7th Product"
+                />
+                <img
+                  className="d-block w-25"
+                  src="https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d70c2cbfb666ae114a053/webp/yellow-house-t-shirt-480x480.jpg"
+                  alt="8th Product"
+                />
+              </div>
+            </Carousel.Item>
+          </Carousel>
+
         </div>
+
       </div>
     </div>
   );

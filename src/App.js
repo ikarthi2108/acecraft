@@ -14,6 +14,8 @@ import Errorcomponent from './Components/Errorcomponent';
 import Register from './Components/Register';
 import SignIn from './Components/SignIn';
 import Cart from './Components/Cart';
+import PrivateElement from './Components/PrivateRoute';
+import NoteDetail from './Components/NoteDetail';
 
 function App() {
   return (
@@ -21,19 +23,20 @@ function App() {
       <div>
         <Navbar />
         <Routes>
-          <Route exact path='/' element={<Acecraft/>}/>
+          <Route exact path='/' element={<Acecraft />} />
           <Route exact path='/acecraft' element={<Acecraft />} />
           <Route exact path='/School' element={<School />} />
           <Route exact path='/College' element={<College />} />
           <Route exact path='/Enterprise' element={<Enterprice />} />
           <Route exact path='/Notes' element={<Notes />} />
+          <Route exact path='/notes/:id' element={<NoteDetail />} />
           <Route exact path='/Airenmask' element={<Airenmask />} />
           <Route path='*' element={<Errorcomponent />} />
           <Route exact path='/Uniforms' element={<Uniforms />} />
           <Route exact path='/Uniform/:id' element={<Uniformdisplay />} />
           <Route exact path='/signup' element={<Register />} />
           <Route exact path='/signin' element={<SignIn />} />
-          <Route exact path='/cart' element={<Cart />}/>
+          <Route exact path='/cart' element={<PrivateElement><Cart /></PrivateElement>} />
         </Routes>
         <Footer />
       </div>
