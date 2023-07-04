@@ -1,0 +1,32 @@
+.containernote {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+  }
+  
+  .note-title {
+    color: black;
+  }
+  
+  .note-description {
+    color: black;
+  }
+  
+  .section-title {
+    color: black;
+    margin-top: 20px;
+  }
+  
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  li {
+    color: black;
+    margin-bottom: 10px;
+  }
+  

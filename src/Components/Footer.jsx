@@ -7,7 +7,7 @@ import Linkedin from '../assests/Linkedin.png'
 
 export default function Footer() {
   return (
-    <footer id="bg-black">
+    <footer id="bg-black" >
       <div className="container">
         <div className="text-center" id="social">
           <a href="https://facebook.com"><img src={Fb} className="m-2" width="2.9%" alt="Facebook" /></a>

@@ -11,5 +11,5 @@ const PrivateElement = ({ children }) => {
     );
   };
   
-
+ 
 export default PrivateElement

@@ -14,7 +14,7 @@ export default function Acecraft() {
           <div className="row justify-content-center" id="arrow-link">
             <div className="ml-4 text-center">
               {/* eslint-disable-next-line */}
-              <p><Link to='/College'>ACECRAFT FOR COLLAGES<i className="fa-sharp fa-solid fa-angle-right"></i></Link></p>
+              <p><Link to='/College'>ACECRAFT FOR COLLEGES<i className="fa-sharp fa-solid fa-angle-right"></i></Link></p>
             </div>
           </div>
         </div>

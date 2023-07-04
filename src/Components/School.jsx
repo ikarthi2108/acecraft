@@ -269,7 +269,13 @@ export const Uniforms = () => {
         <h2 id="imgt">Decode</h2>
         <h2 id="imgt1">Your kind of designer uniforms.</h2>
       </div>
-      <div className="ms-5 mt-4">
+      <div className="container-fluid">
+        <div className="row"> 
+        <div className="col">
+      <h3 className="mt-2 ms-5" style={{color:"black"}}>Total Items : {dressData.length}</h3>
+      </div>
+      <div className="col-md-2">
+      <div className="ms-5 mt-4" >
         <select id="sortOrder" value={sortOption} onChange={handleSortChange}>
           <option value="/">Sort</option>
           <option value="ascending">Ascending</option>
@@ -277,6 +283,10 @@ export const Uniforms = () => {
           <option value="priceLowToHigh">Price: Low to High</option>
           <option value="priceHighToLow">Price: High to Low</option>
         </select>
+      </div>
+      </div>
+      </div>
+      
       </div>
       <div className="uniforms-container">
         {dressData.length > 0 ? (
@@ -331,7 +341,7 @@ export const Uniformdisplay = () => {
   };
 
   const handleSizeChange = (event) => {
-    setSelectedSize(event.target.value);
+    setSelectedSize(event.target.value); 
   };
 
   const Updatedcost = () => {
@@ -454,7 +464,7 @@ export const Uniformdisplay = () => {
       })
       .catch((error) => {
         console.error("Error adding item to cart:", error);
-        toast.error("Failed to add item to cart", {
+        toast.error("Product already in the cart", {
           position: toast.POSITION.BOTTOM_RIGHT,
         });
       });
@@ -675,6 +685,8 @@ export const Uniformdisplay = () => {
                 </div>
               </div>
             </div>
+
+            
           </div>
         </div>
         {/* description */}
