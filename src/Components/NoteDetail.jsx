@@ -8,7 +8,7 @@ const NoteDetail = () => {
   const { id } = useParams(); // Retrieve the note ID using useParams
 
   useEffect(() => {
-    fetch(`http://localhost:4000/Notes/${id}`)
+    fetch(`https://deployjson-p9tw-819wdhsm8-ikarthi2108.vercel.app/${id}`)
       .then((response) => response.json())
       .then((data) => {
         setNote(data);

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useCart } from 'react-use-cart';
 import '../Styles/Cart.css';
+import Swal from 'sweetalert2'
 
 const Cart = () => {
   const {  removeItem, updateItemQuantity, isEmpty } = useCart();
@@ -8,7 +9,7 @@ const Cart = () => {
 
   useEffect(() => {
     // Fetch the cart items from the server
-    fetch('http://localhost:4000/Cartitems')
+    fetch('https://deployjson-p9tw-819wdhsm8-ikarthi2108.vercel.app/Cartitems')
       .then((response) => response.json())
       .then((data) => setCartItems(data));
   }, []);
@@ -18,7 +19,7 @@ const Cart = () => {
     setCartItems(cartItems.filter((item) => item.id !== itemId));
 
     // Remove the item from the server data
-    fetch(`http://localhost:4000/Cartitems/${itemId}`, {
+    fetch(`https://deployjson-p9tw-819wdhsm8-ikarthi2108.vercel.app/Cartitems/${itemId}`, {
       method: 'DELETE',
     })
       .then((response) => response.json())
@@ -72,6 +73,76 @@ const Cart = () => {
   if (isEmpty) {
     return <h2 className="text-center">Your cart is empty.</h2>;
   }
+
+  //payment
+
+  let paymentHandler="";
+
+  //When testing interactively, use a card number, such as 4242 4242 4242 4242.
+  //Enter the card number in the Dashboard or in any payment form.
+  //se a valid future date, such as 12/34.
+  //Use any three-digit CVC (four digits for American Express cards).
+  //function makePayment(amount) {
+  function makePayment() {
+    invokeStripe();
+  paymentHandler = window.StripeCheckout.configure({
+      key: "pk_test_51Kb7TuSGj6LZeNumr4WWZQlyT0VAdXUwQ0zPIJAmGbnt9MAwXkJ5aIfQOZsCPraDu1L2BxAyRb8jLSF5tB6fL8mO00Yw0HiRYf",
+      locale: "auto",
+      token: function (stripeToken) {
+        console.log(stripeToken);
+        //alert('Stripe token generated!');
+        const Toast = Swal.mixin({
+          toast: true,
+          position: "top",
+          showConfirmButton: false,
+          timer: 3000,
+          timerProgressBar: true,
+        });
+
+        Toast.fire({
+          icon: "success",
+          title: "Order Placed Successfully",
+        });
+      },
+    });
+    paymentHandler.open({
+      name: "Course",
+      description: "Order Details",
+      //amount: amount,
+    });
+  }
+
+  function invokeStripe() {
+    if (!window.document.getElementById("stripe-script")) {
+      const script = window.document.createElement("script");
+      script.id = "stripe-script";
+      script.type = "text/javascript";
+      script.src = "https://checkout.stripe.com/checkout.js";
+      script.onClick = () => {
+     paymentHandler = window.StripeCheckout.configure({
+          key: "pk_test_51NQTquSFuHuOMIa3hLt9UWTnXXozBde8dp3kDKCfUmFoVuvSIKnYP4eJ34zggZHIdJzpKJENzi9ZZNbYvqVVGCLc009RO8ppgN",
+          locale: "auto",
+          token: function (stripeToken) {
+            console.log(stripeToken);
+            const Toast = Swal.mixin({
+              toast: true,
+              position: "top",
+              showConfirmButton: false,
+              timer: 3000,
+              timerProgressBar: true,
+            });
+
+            Toast.fire({
+              icon: "error",
+              title: "Error in generating Stripe Payment Gateway",
+            });
+          },
+        });
+      };
+      window.document.body.appendChild(script);
+    }
+  }
+
 
   return (
     <div className="container py-5">
@@ -127,7 +198,7 @@ const Cart = () => {
           </button>
         </div>
         <div className="text-end mt-n4 pt-n5">
-          <button className="bg-white">Place order</button>
+          <button className="bg-white" onClick={ makePayment}>Place order</button>
         </div>
       </div>
     </div>

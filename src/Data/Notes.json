@@ -559,22 +559,5 @@
       "gstNumber": "56565"
     }
   ],
-  "Cartitems": [
-    {
-      "image": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/627bd600820ea897cb5a5cfc/webp/day-wear-polos-480x480.jpg",
-      "id": 1,
-      "title": "NHIS Day Wear Polo [Boys & Girls, Nursery-Grade 5]",
-      "price": "340",
-      "quantity": "3",
-      "size": "18"
-    },
-    {
-      "image": "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/601d6e74cbfb666ae1145869/webp/elementary-school-480x480.jpg",
-      "id": 2,
-      "title": "NHIS Day Wear Polo [Boys & Girls, Nursery-Grade 5]",
-      "price": "450",
-      "quantity": "1",
-      "size": "18"
-    }
-  ]
+  "Cartitems": []
 }

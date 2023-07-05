@@ -111,7 +111,7 @@ const Register = () => {
       
 
    
-      fetch("http://localhost:4000/NewUser", {
+      fetch("https://deployjson-p9tw-819wdhsm8-ikarthi2108.vercel.app/NewUser", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
