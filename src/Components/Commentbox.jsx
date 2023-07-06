@@ -2,9 +2,9 @@ import React from 'react';
 import '../Styles/Commentbox.css'
 const Commentbox = () => {
   return (
-    <div className="comment-box">
+    <div className="comment1-box">
       <h2>Leave a Comment</h2>
-      <div className="form-group">
+      <div className="form1-group">
         <label htmlFor="name">Name:</label>
         <input type="text" id="name" placeholder="Enter your name" />
       </div>

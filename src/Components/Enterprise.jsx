@@ -23,7 +23,7 @@ function Logo() {
   const [logos, setLogos] = useState([]);
 
   const fetchData = () => {
-    axios.get('http://localhost:4000/honda')
+    axios.get('https://deployjson-p9tw-819wdhsm8-ikarthi2108.vercel.app/honda')
       .then((response) => {
         setLogos(response.data);
       })
@@ -72,7 +72,7 @@ function Text() {
 function Cards() {
   const [mensindex, setmensindex] = useState([]);
   const fetchData = () => {
-    axios.get('http://localhost:4000/mens')
+    axios.get('https://deployjson-p9tw-819wdhsm8-ikarthi2108.vercel.app/mens')
       .then((response) => {
         setmensindex(response.data);
       });
@@ -109,7 +109,7 @@ function Cards() {
  function Steps() {
   const [stepsindex, setstepsindex] = useState([]);
   const fetchData = () => {
-      axios.get('http://localhost:4000/steps')
+      axios.get('https://deployjson-p9tw-819wdhsm8-ikarthi2108.vercel.app/steps')
           .then((response) => {
               setstepsindex(response.data);
           });
