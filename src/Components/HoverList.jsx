@@ -13,13 +13,13 @@ const HoverList = () => {
           <li>
             <Link to='/signup'><label className='HomeUls' >Register |<i class="fa-solid fa-user-plus"></i></label></Link>
           </li>
-          <li>
+          {/* <li>
             <Link to='/orderStatus'><label className='HomeUls' >Order Status | <i class="fa-solid fa-box-archive"></i></label></Link>
           </li>
           <li>
             <Link to='/contact'><label className='HomeUls' >Contact | <i class="fa-solid fa-comments"></i></label> </Link>
           </li>
-  
+   */}
         </ul>
       </div>
     )

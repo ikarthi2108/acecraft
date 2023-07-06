@@ -8,7 +8,7 @@ const NoteDetail = () => {
   const { id } = useParams(); // Retrieve the note ID using useParams
 
   useEffect(() => {
-    fetch(`https://deployjson-p9tw-819wdhsm8-ikarthi2108.vercel.app/Notes/${id}`)
+    fetch(`https://acecraft-deploy.onrender.com/Notes/${id}`)
       .then((response) => response.json())
       .then((data) => {
         setNote(data);

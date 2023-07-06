@@ -9,7 +9,7 @@ const Cart = () => {
 
   useEffect(() => {
     // Fetch the cart items from the server
-    fetch('https://deployjson-p9tw-819wdhsm8-ikarthi2108.vercel.app/Cartitems')
+    fetch('https://acecraft-deploy.onrender.com/Cartitems')
       .then((response) => response.json())
       .then((data) => setCartItems(data));
   }, []);
@@ -19,7 +19,7 @@ const Cart = () => {
     setCartItems(cartItems.filter((item) => item.id !== itemId));
 
     // Remove the item from the server data
-    fetch(`https://deployjson-p9tw-819wdhsm8-ikarthi2108.vercel.app/Cartitems/${itemId}`, {
+    fetch(`https://acecraft-deploy.onrender.com/Cartitems/${itemId}`, {
       method: 'DELETE',
     })
       .then((response) => response.json())
@@ -71,7 +71,7 @@ const Cart = () => {
   const totalPrice = cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0);
 
   if (isEmpty) {
-    return <h2 className="text-center">Your cart is empty.</h2>;
+    return <h2 className="text-center vh-100" style={{marginTop:"300px"}}>Your cart is empty.</h2>;
   }
 
   //payment

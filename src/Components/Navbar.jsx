@@ -53,8 +53,9 @@ function Navbar() {
           </div>
         </div>
       </nav>
+      <div className='setting'>
       <div
-        className='setting'
+        
         onMouseEnter={() => setIsHovering(true)}
       >
         <div className='ml-4'>
@@ -62,12 +63,14 @@ function Navbar() {
             <FontAwesomeIcon icon={faCog} size='2x' />
           </Link>
         </div>
+        </div>
         <div>
           <Link className='nav-link shoppingCart' to='/cart'>
             <FontAwesomeIcon icon={faShoppingCart} size='2x' />
             <span className="badge">{totalUniqueItems}</span>
           </Link>
         </div>
+      
       </div>
       {isHovering && (
         <div

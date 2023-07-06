@@ -24,7 +24,7 @@ const SignIn = () => {
     e.preventDefault();
 
     // Fetch user details from the server
-    fetch("https://deployjson-p9tw-819wdhsm8-ikarthi2108.vercel.app/NewUser")
+    fetch("https://acecraft-deploy.onrender.com/NewUser")
       .then((response) => response.json())
       .then((data) => {
         const foundUser = data.find(

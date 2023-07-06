@@ -28,7 +28,7 @@ function Logo() {
 
   //fetching the logo images from the api
   const fetchData = () => {
-    fetch("https://deployjson-p9tw-819wdhsm8-ikarthi2108.vercel.app/schools")
+    fetch("https://acecraft-deploy.onrender.com/schools")
       .then((response) => response.json())
       .then((data) => {
         setLogos(data);
@@ -254,7 +254,7 @@ export const Uniforms = () => {
 
   //fetching the details from the json (uniform details)
   useEffect(() => {
-    fetch("https://deployjson-p9tw-819wdhsm8-ikarthi2108.vercel.app/dress")
+    fetch("https://acecraft-deploy.onrender.com/dress")
       .then((response) => response.json())
       .then((data) => {
         setDressData(data);
@@ -386,7 +386,7 @@ export const Uniformdisplay = () => {
 
 //used to fectch the details of the uniforms from the uniforms page fetching based on the id
   useEffect(() => {
-    fetch(`https://deployjson-p9tw-819wdhsm8-ikarthi2108.vercel.app/dress/${id}`)
+    fetch(`https://acecraft-deploy.onrender.com/dress/${id}`)
       .then((response) => response.json())
       .then((data) => setscluniform(data));
   }, [id]);
@@ -508,7 +508,7 @@ export const Uniformdisplay = () => {
     console.log(item.quantity);
 
     // POST item to Cartitems endpoint
-    fetch("https://deployjson-p9tw-819wdhsm8-ikarthi2108.vercel.app/Cartitems", {
+    fetch("https://acecraft-deploy.onrender.com/Cartitems", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

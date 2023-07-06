@@ -41,4 +41,7 @@
   button.post-button:hover {
     background-color: #000000;
   }
-  
+  #name,#email{
+    width: 100%;
+    
+  }

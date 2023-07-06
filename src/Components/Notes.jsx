@@ -6,7 +6,7 @@ const Notes = () => {
   const [notesindex, setnotesindex] = useState([]);
 
   const fetchData = () => {
-    fetch('https://deployjson-p9tw-819wdhsm8-ikarthi2108.vercel.app/Notes')
+    fetch('https://acecraft-deploy.onrender.com/Notes')
       .then((response) => response.json())
       .then((data) => {
         setnotesindex(data);

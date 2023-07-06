@@ -111,7 +111,7 @@ const Register = () => {
       
 
    
-      fetch("https://deployjson-p9tw-819wdhsm8-ikarthi2108.vercel.app/NewUser", {
+      fetch("https://acecraft-deploy.onrender.com/NewUser", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
