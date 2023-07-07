@@ -68,7 +68,14 @@ const Cart = () => {
     }
   };
 
-  const totalPrice = cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0);
+  // const totalPrice = cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0);
+  let totalPrice = 0;
+
+for (let i = 0; i < cartItems.length; i++) {
+  const item = cartItems[i];
+  totalPrice += item.price * item.quantity;
+}
+
 
   if (isEmpty) {
     return <h2 className="text-center vh-100" style={{marginTop:"300px"}}>Your cart is empty.</h2>;
