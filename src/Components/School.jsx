@@ -173,7 +173,7 @@ function Fifthscroll() {
             className="fs-2 fw-lighter"
             style={{ fontFamily: "Courier New, monospace" }}
           >
-            acecraft
+            classy Threads
           </p>
         </div>
 
@@ -684,15 +684,15 @@ export const Uniformdisplay = () => {
               </button>
             </CartProvider>
 
-            <button
-              style={{ backgroundColor: "black" }}
+            <Link to='/cart' ><button
+              style={{ backgroundColor: "black" ,color:"white",textDecoration:"none" }}
               type="button"
-              className="btn btn-dark mt-5 ms-5"
+              className="btn btn-dark mt-5 ms-5 text-decoration-none color-white"
               onClick={handleAddToCart}
 
             >
-             <Link to='/cart' className="text-decoration-none">Buy Now</Link> 
-            </button>
+            Buy Now 
+            </button></Link>
 
             <ToastContainer />
             {/* modal for size chart */}
