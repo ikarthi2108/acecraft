@@ -136,7 +136,7 @@ function Fourthscroll() {
     <section className="bg-black">
       <div className="container">
         <div id="text2">
-          <div className="text-end">
+          <div className="text-center">
             <p className="fs-1 m-0">
               <b>Be at ease.</b>
             </p>
@@ -154,7 +154,7 @@ function Fourthscroll() {
               "https://cdn.storehippo.com/s/5997cc7c4d6e8ffa20e50aae/ms.files/BK,.jpg"
             }
             alt="img"
-            className="img-responsive"
+            className="img-responsive ms-5"
             width="100%"
           />
         </div>
@@ -688,8 +688,10 @@ export const Uniformdisplay = () => {
               style={{ backgroundColor: "black" }}
               type="button"
               className="btn btn-dark mt-5 ms-5"
+              onClick={handleAddToCart}
+
             >
-              Buy Now
+             <Link to='/cart' className="text-decoration-none">Buy Now</Link> 
             </button>
 
             <ToastContainer />
@@ -723,7 +725,7 @@ export const Uniformdisplay = () => {
                       className="text-center"
                       style={{ color: "black", fontSize: "35px" }}
                     >
-                      a c e c r a f t
+                      Classy Threads
                     </h3>
                     <img
                       src={sizeguide}

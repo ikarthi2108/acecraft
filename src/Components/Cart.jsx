@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useCart } from 'react-use-cart';
 import '../Styles/Cart.css';
 import Swal from 'sweetalert2'
+import { Link } from 'react-router-dom';
 
 const Cart = () => {
   const {  removeItem, updateItemQuantity, isEmpty } = useCart();
@@ -199,10 +200,10 @@ for (let i = 0; i < cartItems.length; i++) {
         <h3 className="text-end mt-n4 text-black">₹{totalPrice}</h3>
       </div>
       <div className="row d-flex justify-content-end">
-        <div style={{ marginRight: '-950px', marginTop: '30px' }}>
-          <button className="bg-white " id="cartbtn">
-            Continue shopping
-          </button>
+       <div style={{ marginRight: '-950px', marginTop: '30px' }}>
+         {/* <button className="bg-white " id="cartbtn">
+        <Link to='/'> Continue shopping</Link> 
+          </button> */}
         </div>
         <div className="text-end mt-n4 pt-n5">
           <button className="bg-white" onClick={ makePayment}>Place order</button>

@@ -5,6 +5,7 @@ import { faCog, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import '../Styles/Navbar.css';
 import HoverList from '../Components/HoverList';
 import { useCart } from "react-use-cart";
+import classy from '../assests/classy threads red 1.png'
 
 function Navbar() {
   const {
@@ -16,7 +17,7 @@ function Navbar() {
   return (
     <div className='navbarfull fixed-top'>
       <Link className='titlename' to='/acecraft'>
-        acecraft
+        <img src={classy} className='w-25' alt='logo'></img>
       </Link>
       <nav className='navbar-expand-lg'>
         <div className='container-fluid'>
@@ -40,15 +41,15 @@ function Navbar() {
               <Link className='nav-link me-5' to='College'>
                 COLLEGE
               </Link>
-              <Link className='nav-link me-5' to='Enterprise'>
+              {/* <Link className='nav-link me-5' to='Enterprise'>
                 ENTERPRISE
-              </Link>
+              </Link> */}
               <Link className='nav-link notes me-5' to='Notes'>
                 NOTES
               </Link>
-              <Link className='nav-link' id='areamask' to='Airenmask'>
+              {/* <Link className='nav-link' id='areamask' to='Airenmask'>
                 ARIEN MASK
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>

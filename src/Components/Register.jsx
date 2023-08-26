@@ -257,7 +257,7 @@ const Register = () => {
             </div>
 
             <div>
-              <label className="ms-5">
+              {/* <label className="ms-5">
                 <input
                   type="radio"
                   value="school"
@@ -265,16 +265,7 @@ const Register = () => {
                   onChange={(e) => setUserType(e.target.value)}
                 />
                 School
-              </label>
-              <label className="ms-5">
-                <input
-                  type="radio"
-                  value="enterprise"
-                  checked={userType === "enterprise"}
-                  onChange={(e) => setUserType(e.target.value)}
-                />
-                Enterprise
-              </label>
+              </label> */}
             </div>
             {errors.userType && (
               <div className="invalid-feedback">{errors.userType}</div>
